@@ -14,10 +14,7 @@ struct PostsListView: View {
                     PostsListTitleView()
                     ScrollView(showsIndicators: false) {
                     PopularPostsSectionView()
-                    Rectangle()
-                        .foregroundColor(.gray)
-                        .frame(height: 6)
-                        .padding(EdgeInsets(top: 5, leading: .zero, bottom: 32, trailing: .zero))
+                    SectionDividerView()
                     TotalPostsSectionView()
                     Spacer()
                 }
