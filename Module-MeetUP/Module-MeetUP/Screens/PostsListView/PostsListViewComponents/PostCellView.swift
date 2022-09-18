@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-//TODO: 색상 변경 필요
+//FIXME: 색상 변경 필요
 struct PostCellView: View {
-    //TODO: 임시 게시글 정보
+    //FIXME: 임시 게시글 정보 변경 필요
     let postTitle: String = "포스트 타이틀"
     let postWriter: String = "글쓴이"
     let postViews: Int = 100
@@ -40,7 +40,7 @@ struct PostCellView: View {
 }
 
 struct PostCommentView: View {
-    //TODO: 임시 댓글 수
+    //FIXME: 임시 댓글 수
     let commentCount: Int = 10
     
     var body: some View {
@@ -60,7 +60,7 @@ struct PostCommentView: View {
 }
 
 struct PostImageView: View {
-    //TODO: 임시 이미지
+    //FIXME: 임시 이미지
     let postImage = "dummyImage"
     
     var body: some View {

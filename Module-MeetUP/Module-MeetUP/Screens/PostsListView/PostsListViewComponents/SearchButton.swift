@@ -10,7 +10,7 @@ import SwiftUI
 struct SearchButton: View {
     var body: some View {
         Button {
-            //TODO: SearchView 연결 필요
+            //FIXME: SearchView 연결 필요
         } label: {
             Image(systemName: "magnifyingglass")
                 .font(.title3)

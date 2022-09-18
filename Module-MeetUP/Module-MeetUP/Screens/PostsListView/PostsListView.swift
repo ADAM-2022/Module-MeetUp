@@ -26,7 +26,7 @@ struct PostsListView: View {
     }
 }
 
-//TODO: ForEach문 전부 변경 필요
+//FIXME: ForEach문 전부 변경 필요
 struct PopularPostsSectionView: View {
     var body: some View {
         VStack(alignment:.leading, spacing: .zero) {
