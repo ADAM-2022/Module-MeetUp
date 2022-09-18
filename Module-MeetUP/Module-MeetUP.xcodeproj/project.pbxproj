@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		AB009F5128D6FCE400A43D63 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB009F5028D6FCE400A43D63 /* Preview Assets.xcassets */; };
+		AB009F5728D76CB100A43D63 /* PostDetailBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009F5328D76CB100A43D63 /* PostDetailBackButton.swift */; };
+		AB009F5828D76CB100A43D63 /* PostDetailInfoArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009F5428D76CB100A43D63 /* PostDetailInfoArea.swift */; };
+		AB009F5928D76CB100A43D63 /* PostDetailBodyArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009F5528D76CB100A43D63 /* PostDetailBodyArea.swift */; };
+		AB009F5A28D76CB100A43D63 /* PostDetailTitleArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009F5628D76CB100A43D63 /* PostDetailTitleArea.swift */; };
+		AB009F5C28D76DF900A43D63 /* PostDetailStateHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009F5B28D76DF900A43D63 /* PostDetailStateHolder.swift */; };
 		ABD4874228D6F99500FFD3A1 /* Module_MeetUPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD4874128D6F99500FFD3A1 /* Module_MeetUPApp.swift */; };
 		ABD4874428D6F99500FFD3A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD4874328D6F99500FFD3A1 /* ContentView.swift */; };
 		ABD4874628D6F99600FFD3A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABD4874528D6F99600FFD3A1 /* Assets.xcassets */; };
@@ -20,6 +25,11 @@
 
 /* Begin PBXFileReference section */
 		AB009F5028D6FCE400A43D63 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AB009F5328D76CB100A43D63 /* PostDetailBackButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailBackButton.swift; sourceTree = "<group>"; };
+		AB009F5428D76CB100A43D63 /* PostDetailInfoArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailInfoArea.swift; sourceTree = "<group>"; };
+		AB009F5528D76CB100A43D63 /* PostDetailBodyArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailBodyArea.swift; sourceTree = "<group>"; };
+		AB009F5628D76CB100A43D63 /* PostDetailTitleArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailTitleArea.swift; sourceTree = "<group>"; };
+		AB009F5B28D76DF900A43D63 /* PostDetailStateHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailStateHolder.swift; sourceTree = "<group>"; };
 		ABD4873E28D6F99500FFD3A1 /* Module-MeetUP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Module-MeetUP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABD4874128D6F99500FFD3A1 /* Module_MeetUPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module_MeetUPApp.swift; sourceTree = "<group>"; };
 		ABD4874328D6F99500FFD3A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +58,17 @@
 				AB009F5028D6FCE400A43D63 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AB009F5228D76CB100A43D63 /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				AB009F5328D76CB100A43D63 /* PostDetailBackButton.swift */,
+				AB009F5428D76CB100A43D63 /* PostDetailInfoArea.swift */,
+				AB009F5528D76CB100A43D63 /* PostDetailBodyArea.swift */,
+				AB009F5628D76CB100A43D63 /* PostDetailTitleArea.swift */,
+			);
+			path = ViewComponents;
 			sourceTree = "<group>";
 		};
 		ABD4873528D6F99500FFD3A1 = {
@@ -92,6 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				ABD4875328D6FA1C00FFD3A1 /* PostDetailViewTemp.swift */,
+				AB009F5B28D76DF900A43D63 /* PostDetailStateHolder.swift */,
+				AB009F5228D76CB100A43D63 /* ViewComponents */,
 			);
 			path = PostDetailView;
 			sourceTree = "<group>";
@@ -218,11 +241,16 @@
 			files = (
 				ABD4874428D6F99500FFD3A1 /* ContentView.swift in Sources */,
 				ABD4874228D6F99500FFD3A1 /* Module_MeetUPApp.swift in Sources */,
+				AB009F5C28D76DF900A43D63 /* PostDetailStateHolder.swift in Sources */,
+				AB009F5828D76CB100A43D63 /* PostDetailInfoArea.swift in Sources */,
 				ABD4875128D6F9E300FFD3A1 /* PostsListViewTemp.swift in Sources */,
+				AB009F5728D76CB100A43D63 /* PostDetailBackButton.swift in Sources */,
 				ABD4875428D6FA1C00FFD3A1 /* PostDetailViewTemp.swift in Sources */,
 				ABD4875828D6FA8100FFD3A1 /* NetworkModuleTemp.swift in Sources */,
 				ABD4875F28D6FB1C00FFD3A1 /* GlobalTemp.swift in Sources */,
 				ABD4875B28D6FAD300FFD3A1 /* JsonDecodertemp.swift in Sources */,
+				AB009F5A28D76CB100A43D63 /* PostDetailTitleArea.swift in Sources */,
+				AB009F5928D76CB100A43D63 /* PostDetailBodyArea.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
