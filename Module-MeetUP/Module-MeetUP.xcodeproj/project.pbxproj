@@ -52,7 +52,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2A208C4628D73D31005ABC47 /* ViewModules */ = {
+		2A208C4628D73D31005ABC47 /* PostsListViewComponents */ = {
 			isa = PBXGroup;
 			children = (
 				2A208C4728D73D64005ABC47 /* PostCellView.swift */,
@@ -61,7 +61,7 @@
 				2A48679628D7543E0011FE44 /* SearchButton.swift */,
 				2A48679828D75CED0011FE44 /* SectionDividerView.swift */,
 			);
-			path = ViewModules;
+			path = PostsListViewComponents;
 			sourceTree = "<group>";
 		};
 		AB009F4F28D6FCE400A43D63 /* Preview Content */ = {
@@ -106,7 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				2A48679428D753AE0011FE44 /* PostsListView.swift */,
-				2A208C4628D73D31005ABC47 /* ViewModules */,
+				2A208C4628D73D31005ABC47 /* PostsListViewComponents */,
 			);
 			path = PostsListView;
 			sourceTree = "<group>";
