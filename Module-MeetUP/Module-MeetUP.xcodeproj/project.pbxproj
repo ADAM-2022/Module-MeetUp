@@ -18,7 +18,6 @@
 		ABD4874428D6F99500FFD3A1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD4874328D6F99500FFD3A1 /* MainView.swift */; };
 		ABD4874628D6F99600FFD3A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABD4874528D6F99600FFD3A1 /* Assets.xcassets */; };
 		ABD4875128D6F9E300FFD3A1 /* PostsListViewTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD4875028D6F9E300FFD3A1 /* PostsListViewTemp.swift */; };
-		ABD4875428D6FA1C00FFD3A1 /* PostDetailViewTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD4875328D6FA1C00FFD3A1 /* PostDetailViewTemp.swift */; };
 		ABD4875828D6FA8100FFD3A1 /* NetworkModuleTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD4875728D6FA8100FFD3A1 /* NetworkModuleTemp.swift */; };
 		ABD4875B28D6FAD300FFD3A1 /* JsonDecodertemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD4875A28D6FAD300FFD3A1 /* JsonDecodertemp.swift */; };
 		ABD4875F28D6FB1C00FFD3A1 /* GlobalTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD4875E28D6FB1C00FFD3A1 /* GlobalTemp.swift */; };
@@ -37,7 +36,6 @@
 		ABD4874328D6F99500FFD3A1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		ABD4874528D6F99600FFD3A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABD4875028D6F9E300FFD3A1 /* PostsListViewTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListViewTemp.swift; sourceTree = "<group>"; };
-		ABD4875328D6FA1C00FFD3A1 /* PostDetailViewTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewTemp.swift; sourceTree = "<group>"; };
 		ABD4875728D6FA8100FFD3A1 /* NetworkModuleTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModuleTemp.swift; sourceTree = "<group>"; };
 		ABD4875A28D6FAD300FFD3A1 /* JsonDecodertemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDecodertemp.swift; sourceTree = "<group>"; };
 		ABD4875E28D6FB1C00FFD3A1 /* GlobalTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalTemp.swift; sourceTree = "<group>"; };
@@ -114,7 +112,6 @@
 		ABD4875228D6FA0600FFD3A1 /* PostDetailView */ = {
 			isa = PBXGroup;
 			children = (
-				ABD4875328D6FA1C00FFD3A1 /* PostDetailViewTemp.swift */,
 				AB009F5B28D76DF900A43D63 /* PostDetailStateHolder.swift */,
 				AB009F5D28D76E6C00A43D63 /* PostDetailView.swift */,
 				AB009F5228D76CB100A43D63 /* ViewComponents */,
@@ -248,7 +245,6 @@
 				AB009F5828D76CB100A43D63 /* PostDetailInfoArea.swift in Sources */,
 				ABD4875128D6F9E300FFD3A1 /* PostsListViewTemp.swift in Sources */,
 				AB009F5728D76CB100A43D63 /* PostDetailBackButton.swift in Sources */,
-				ABD4875428D6FA1C00FFD3A1 /* PostDetailViewTemp.swift in Sources */,
 				ABD4875828D6FA8100FFD3A1 /* NetworkModuleTemp.swift in Sources */,
 				AB009F5E28D76E6C00A43D63 /* PostDetailView.swift in Sources */,
 				ABD4875F28D6FB1C00FFD3A1 /* GlobalTemp.swift in Sources */,
