@@ -10,6 +10,8 @@
 		2A208C4828D73D64005ABC47 /* PostCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A208C4728D73D64005ABC47 /* PostCellView.swift */; };
 		2A208C4A28D73D72005ABC47 /* FloatingButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A208C4928D73D72005ABC47 /* FloatingButtonView.swift */; };
 		2A208C4C28D73DA5005ABC47 /* BackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A208C4B28D73DA5005ABC47 /* BackButtonView.swift */; };
+		2A48679528D753AE0011FE44 /* PostsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A48679428D753AE0011FE44 /* PostsListView.swift */; };
+		2A48679728D7543E0011FE44 /* SearchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A48679628D7543E0011FE44 /* SearchButton.swift */; };
 		AB009F5128D6FCE400A43D63 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB009F5028D6FCE400A43D63 /* Preview Assets.xcassets */; };
 		ABD4874228D6F99500FFD3A1 /* Module_MeetUPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD4874128D6F99500FFD3A1 /* Module_MeetUPApp.swift */; };
 		ABD4874428D6F99500FFD3A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD4874328D6F99500FFD3A1 /* ContentView.swift */; };
@@ -24,6 +26,8 @@
 		2A208C4728D73D64005ABC47 /* PostCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCellView.swift; sourceTree = "<group>"; };
 		2A208C4928D73D72005ABC47 /* FloatingButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButtonView.swift; sourceTree = "<group>"; };
 		2A208C4B28D73DA5005ABC47 /* BackButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButtonView.swift; sourceTree = "<group>"; };
+		2A48679428D753AE0011FE44 /* PostsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListView.swift; sourceTree = "<group>"; };
+		2A48679628D7543E0011FE44 /* SearchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchButton.swift; sourceTree = "<group>"; };
 		AB009F5028D6FCE400A43D63 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ABD4873E28D6F99500FFD3A1 /* Module-MeetUP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Module-MeetUP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABD4874128D6F99500FFD3A1 /* Module_MeetUPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module_MeetUPApp.swift; sourceTree = "<group>"; };
@@ -51,6 +55,7 @@
 			children = (
 				2A208C4928D73D72005ABC47 /* FloatingButtonView.swift */,
 				2A208C4B28D73DA5005ABC47 /* BackButtonView.swift */,
+				2A48679628D7543E0011FE44 /* SearchButton.swift */,
 			);
 			path = ViewModules;
 			sourceTree = "<group>";
@@ -98,6 +103,7 @@
 			children = (
 				2A208C4628D73D31005ABC47 /* ViewModules */,
 				2A208C4728D73D64005ABC47 /* PostCellView.swift */,
+				2A48679428D753AE0011FE44 /* PostsListView.swift */,
 			);
 			path = PostsListView;
 			sourceTree = "<group>";
@@ -237,7 +243,9 @@
 				ABD4875428D6FA1C00FFD3A1 /* PostDetailViewTemp.swift in Sources */,
 				ABD4875828D6FA8100FFD3A1 /* NetworkModuleTemp.swift in Sources */,
 				ABD4875F28D6FB1C00FFD3A1 /* GlobalTemp.swift in Sources */,
+				2A48679728D7543E0011FE44 /* SearchButton.swift in Sources */,
 				2A208C4A28D73D72005ABC47 /* FloatingButtonView.swift in Sources */,
+				2A48679528D753AE0011FE44 /* PostsListView.swift in Sources */,
 				ABD4875B28D6FAD300FFD3A1 /* JsonDecodertemp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

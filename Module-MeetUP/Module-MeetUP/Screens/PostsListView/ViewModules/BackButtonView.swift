@@ -15,9 +15,7 @@ struct BackButtonView: View {
             self.mode.wrappedValue.dismiss()
         } label: {
             Image(systemName: "chevron.left")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 15)
+                .font(.title3)
                 .foregroundColor(.black)
         }
 

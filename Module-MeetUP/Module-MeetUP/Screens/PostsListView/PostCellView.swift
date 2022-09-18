@@ -35,7 +35,7 @@ struct PostCellView: View {
                 .padding(.trailing, 7)
             PostCommentView()
         }
-        .padding(.horizontal, 20)
+        .padding(EdgeInsets(top: 25, leading: 20, bottom: 20, trailing: 20))
     }
 }
 
