@@ -35,7 +35,7 @@ struct PopularPostsSectionView: View {
                 .foregroundColor(.black)
                 .font(.system(size: 18))
                 .padding(EdgeInsets(top: 16, leading: 20, bottom: 9, trailing: 20))
-            ForEach(0 ..< 2, id: \.self) {postNum in
+            ForEach(0 ..< 2, id: \.self) { postNum in
                 PostCellView()
                 if postNum < 1 {
                     Divider()
@@ -54,7 +54,7 @@ struct TotalPostsSectionView: View {
                 .font(.system(size: 18))
                 .padding(EdgeInsets(top: .zero, leading: 20, bottom: 9, trailing: 20))
             
-            ForEach(0 ..< 10, id: \.self) {_ in
+            ForEach(0 ..< 10, id: \.self) { _ in
                 PostCellView()
                 Divider()
             }
