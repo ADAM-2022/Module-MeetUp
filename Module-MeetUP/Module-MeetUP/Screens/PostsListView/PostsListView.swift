@@ -26,22 +26,6 @@ struct PostsListView: View {
     }
 }
 
-struct PostsListTitleView: View {
-    var body: some View {
-        HStack(alignment: .center, spacing: .zero) {
-            BackButtonView()
-            Spacer()
-            Text("커뮤니티")
-                .fontWeight(.bold)
-                .foregroundColor(.black)
-                .font(.title3)
-            Spacer()
-            SearchButton()
-        }
-        .padding(EdgeInsets(top: 60, leading: 20, bottom: 16, trailing: 20))
-    }
-}
-
 //TODO: ForEach문 전부 변경 필요
 struct PopularPostsSectionView: View {
     var body: some View {
