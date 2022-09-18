@@ -13,6 +13,7 @@
 		AB009F5928D76CB100A43D63 /* PostDetailBodyArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009F5528D76CB100A43D63 /* PostDetailBodyArea.swift */; };
 		AB009F5A28D76CB100A43D63 /* PostDetailTitleArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009F5628D76CB100A43D63 /* PostDetailTitleArea.swift */; };
 		AB009F5C28D76DF900A43D63 /* PostDetailStateHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009F5B28D76DF900A43D63 /* PostDetailStateHolder.swift */; };
+		AB009F5E28D76E6C00A43D63 /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009F5D28D76E6C00A43D63 /* PostDetailView.swift */; };
 		ABD4874228D6F99500FFD3A1 /* Module_MeetUPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD4874128D6F99500FFD3A1 /* Module_MeetUPApp.swift */; };
 		ABD4874428D6F99500FFD3A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD4874328D6F99500FFD3A1 /* ContentView.swift */; };
 		ABD4874628D6F99600FFD3A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABD4874528D6F99600FFD3A1 /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 		AB009F5528D76CB100A43D63 /* PostDetailBodyArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailBodyArea.swift; sourceTree = "<group>"; };
 		AB009F5628D76CB100A43D63 /* PostDetailTitleArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailTitleArea.swift; sourceTree = "<group>"; };
 		AB009F5B28D76DF900A43D63 /* PostDetailStateHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailStateHolder.swift; sourceTree = "<group>"; };
+		AB009F5D28D76E6C00A43D63 /* PostDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
 		ABD4873E28D6F99500FFD3A1 /* Module-MeetUP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Module-MeetUP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABD4874128D6F99500FFD3A1 /* Module_MeetUPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module_MeetUPApp.swift; sourceTree = "<group>"; };
 		ABD4874328D6F99500FFD3A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			children = (
 				ABD4875328D6FA1C00FFD3A1 /* PostDetailViewTemp.swift */,
 				AB009F5B28D76DF900A43D63 /* PostDetailStateHolder.swift */,
+				AB009F5D28D76E6C00A43D63 /* PostDetailView.swift */,
 				AB009F5228D76CB100A43D63 /* ViewComponents */,
 			);
 			path = PostDetailView;
@@ -247,6 +250,7 @@
 				AB009F5728D76CB100A43D63 /* PostDetailBackButton.swift in Sources */,
 				ABD4875428D6FA1C00FFD3A1 /* PostDetailViewTemp.swift in Sources */,
 				ABD4875828D6FA8100FFD3A1 /* NetworkModuleTemp.swift in Sources */,
+				AB009F5E28D76E6C00A43D63 /* PostDetailView.swift in Sources */,
 				ABD4875F28D6FB1C00FFD3A1 /* GlobalTemp.swift in Sources */,
 				ABD4875B28D6FAD300FFD3A1 /* JsonDecodertemp.swift in Sources */,
 				AB009F5A28D76CB100A43D63 /* PostDetailTitleArea.swift in Sources */,
