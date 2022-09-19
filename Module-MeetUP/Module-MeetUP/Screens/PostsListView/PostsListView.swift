@@ -10,13 +10,18 @@ import SwiftUI
 struct PostsListView: View {
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
-                VStack(alignment: .leading, spacing: .zero) {
-                    PostsListTitleView()
-                    ScrollView(showsIndicators: false) {
-                    PopularPostsSectionView()
-                    SectionDividerView()
-                    TotalPostsSectionView()
-                    Spacer()
+            VStack(alignment: .leading, spacing: .zero) {
+                PostsListTitleView()
+                RefreshableScrollView(onRefresh: { refrashDone in
+                    //TODO: 새로고침될 항목 들어갈 부분
+                    refrashDone()
+                }) {
+                    VStack(spacing: .zero) {
+                        PopularPostsSectionView()
+                        SectionDividerView()
+                        TotalPostsSectionView()
+                        Spacer()
+                    }
                 }
             }
             FloatingButtonView()

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2A48679328D746BA0011FE44 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A48679228D746BA0011FE44 /* ViewExtension.swift */; };
+		2AC77E8628D873710038514F /* RefreshableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC77E8528D873710038514F /* RefreshableScrollView.swift */; };
 		AB009F5128D6FCE400A43D63 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB009F5028D6FCE400A43D63 /* Preview Assets.xcassets */; };
 		AB009F6728D7929900A43D63 /* PostsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009F5F28D7929900A43D63 /* PostsListView.swift */; };
 		AB009F6828D7929900A43D63 /* SectionDividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009F6128D7929900A43D63 /* SectionDividerView.swift */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		2A48679228D746BA0011FE44 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		2AC77E8528D873710038514F /* RefreshableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshableScrollView.swift; sourceTree = "<group>"; };
 		AB009F5028D6FCE400A43D63 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AB009F5F28D7929900A43D63 /* PostsListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsListView.swift; sourceTree = "<group>"; };
 		AB009F6128D7929900A43D63 /* SectionDividerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionDividerView.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				AB009F6428D7929900A43D63 /* BackButtonView.swift */,
 				AB009F6528D7929900A43D63 /* FloatingButtonView.swift */,
 				AB009F6628D7929900A43D63 /* SearchButton.swift */,
+				2AC77E8528D873710038514F /* RefreshableScrollView.swift */,
 			);
 			path = PostsListViewComponents;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				ABD4875B28D6FAD300FFD3A1 /* JsonDecodertemp.swift in Sources */,
 				AB009F6C28D7929900A43D63 /* FloatingButtonView.swift in Sources */,
 				AB009F6B28D7929900A43D63 /* BackButtonView.swift in Sources */,
+				2AC77E8628D873710038514F /* RefreshableScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
