@@ -19,15 +19,12 @@ struct PostDetailBodyArea: View {
                 .lineSpacing(5)
                 .padding(.bottom, 20)
             PostDetailImages()
-                .padding(.bottom, 20)
-                .padding(.leading, -20)
-                .padding(.trailing, -20)
+                .padding(EdgeInsets(top: 0, leading: -20, bottom: 20, trailing: -20))
             Rectangle()
                 .frame(height: 1)
                 .opacity(0.1)
         }
-        .padding(.trailing, 20)
-        .padding(.leading, 20)
+        .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
     }
     
 }
