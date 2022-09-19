@@ -66,9 +66,9 @@
 			isa = PBXGroup;
 			children = (
 				AB009F5328D76CB100A43D63 /* PostDetailBackButton.swift */,
+				AB009F5628D76CB100A43D63 /* PostDetailTitleArea.swift */,
 				AB009F5428D76CB100A43D63 /* PostDetailInfoArea.swift */,
 				AB009F5528D76CB100A43D63 /* PostDetailBodyArea.swift */,
-				AB009F5628D76CB100A43D63 /* PostDetailTitleArea.swift */,
 			);
 			path = ViewComponents;
 			sourceTree = "<group>";
