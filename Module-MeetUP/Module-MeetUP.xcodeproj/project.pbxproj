@@ -15,11 +15,13 @@
 		AB009F5C28D76DF900A43D63 /* PostDetailStateHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009F5B28D76DF900A43D63 /* PostDetailStateHolder.swift */; };
 		AB009F5E28D76E6C00A43D63 /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009F5D28D76E6C00A43D63 /* PostDetailView.swift */; };
 		AB009F9628D845AA00A43D63 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009F9528D845AA00A43D63 /* DeviceInfo.swift */; };
+		AB009F9A28D84E1800A43D63 /* MeetUpNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009F9928D84E1800A43D63 /* MeetUpNetwork.swift */; };
+		AB009F9C28D84EC300A43D63 /* MeetUpNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009F9B28D84EC300A43D63 /* MeetUpNetworkService.swift */; };
+		AB009F9F28D8559700A43D63 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009F9E28D8559700A43D63 /* Post.swift */; };
 		ABD4874228D6F99500FFD3A1 /* Module_MeetUPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD4874128D6F99500FFD3A1 /* Module_MeetUPApp.swift */; };
 		ABD4874428D6F99500FFD3A1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD4874328D6F99500FFD3A1 /* MainView.swift */; };
 		ABD4874628D6F99600FFD3A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABD4874528D6F99600FFD3A1 /* Assets.xcassets */; };
 		ABD4875128D6F9E300FFD3A1 /* PostsListViewTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD4875028D6F9E300FFD3A1 /* PostsListViewTemp.swift */; };
-		ABD4875828D6FA8100FFD3A1 /* NetworkModuleTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD4875728D6FA8100FFD3A1 /* NetworkModuleTemp.swift */; };
 		ABD4875B28D6FAD300FFD3A1 /* JsonDecodertemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD4875A28D6FAD300FFD3A1 /* JsonDecodertemp.swift */; };
 		ABD4875F28D6FB1C00FFD3A1 /* GlobalTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD4875E28D6FB1C00FFD3A1 /* GlobalTemp.swift */; };
 /* End PBXBuildFile section */
@@ -33,12 +35,14 @@
 		AB009F5B28D76DF900A43D63 /* PostDetailStateHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailStateHolder.swift; sourceTree = "<group>"; };
 		AB009F5D28D76E6C00A43D63 /* PostDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
 		AB009F9528D845AA00A43D63 /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
+		AB009F9928D84E1800A43D63 /* MeetUpNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetUpNetwork.swift; sourceTree = "<group>"; };
+		AB009F9B28D84EC300A43D63 /* MeetUpNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetUpNetworkService.swift; sourceTree = "<group>"; };
+		AB009F9E28D8559700A43D63 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		ABD4873E28D6F99500FFD3A1 /* Module-MeetUP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Module-MeetUP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABD4874128D6F99500FFD3A1 /* Module_MeetUPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module_MeetUPApp.swift; sourceTree = "<group>"; };
 		ABD4874328D6F99500FFD3A1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		ABD4874528D6F99600FFD3A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABD4875028D6F9E300FFD3A1 /* PostsListViewTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListViewTemp.swift; sourceTree = "<group>"; };
-		ABD4875728D6FA8100FFD3A1 /* NetworkModuleTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModuleTemp.swift; sourceTree = "<group>"; };
 		ABD4875A28D6FAD300FFD3A1 /* JsonDecodertemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDecodertemp.swift; sourceTree = "<group>"; };
 		ABD4875E28D6FB1C00FFD3A1 /* GlobalTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalTemp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +77,14 @@
 			path = ViewComponents;
 			sourceTree = "<group>";
 		};
+		AB009F9D28D8557300A43D63 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB009F9E28D8559700A43D63 /* Post.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		ABD4873528D6F99500FFD3A1 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +106,7 @@
 			children = (
 				ABD4875C28D6FAF300FFD3A1 /* App */,
 				ABD4875D28D6FB1100FFD3A1 /* Global */,
+				AB009F9D28D8557300A43D63 /* Model */,
 				ABD4875928D6FABE00FFD3A1 /* JsonDecoder */,
 				ABD4875628D6FA6700FFD3A1 /* NetworkModule */,
 				ABD4875528D6FA4400FFD3A1 /* Screens */,
@@ -134,7 +147,8 @@
 		ABD4875628D6FA6700FFD3A1 /* NetworkModule */ = {
 			isa = PBXGroup;
 			children = (
-				ABD4875728D6FA8100FFD3A1 /* NetworkModuleTemp.swift */,
+				AB009F9928D84E1800A43D63 /* MeetUpNetwork.swift */,
+				AB009F9B28D84EC300A43D63 /* MeetUpNetworkService.swift */,
 			);
 			path = NetworkModule;
 			sourceTree = "<group>";
@@ -246,11 +260,13 @@
 				ABD4874228D6F99500FFD3A1 /* Module_MeetUPApp.swift in Sources */,
 				AB009F9628D845AA00A43D63 /* DeviceInfo.swift in Sources */,
 				AB009F5C28D76DF900A43D63 /* PostDetailStateHolder.swift in Sources */,
+				AB009F9A28D84E1800A43D63 /* MeetUpNetwork.swift in Sources */,
 				AB009F5828D76CB100A43D63 /* PostDetailInfoArea.swift in Sources */,
 				ABD4875128D6F9E300FFD3A1 /* PostsListViewTemp.swift in Sources */,
 				AB009F5728D76CB100A43D63 /* PostDetailBackButton.swift in Sources */,
-				ABD4875828D6FA8100FFD3A1 /* NetworkModuleTemp.swift in Sources */,
+				AB009F9C28D84EC300A43D63 /* MeetUpNetworkService.swift in Sources */,
 				AB009F5E28D76E6C00A43D63 /* PostDetailView.swift in Sources */,
+				AB009F9F28D8559700A43D63 /* Post.swift in Sources */,
 				ABD4875F28D6FB1C00FFD3A1 /* GlobalTemp.swift in Sources */,
 				ABD4875B28D6FAD300FFD3A1 /* JsonDecodertemp.swift in Sources */,
 				AB009F5A28D76CB100A43D63 /* PostDetailTitleArea.swift in Sources */,
