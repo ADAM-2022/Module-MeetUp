@@ -17,13 +17,20 @@
 		AB009F6B28D7929900A43D63 /* BackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009F6428D7929900A43D63 /* BackButtonView.swift */; };
 		AB009F6C28D7929900A43D63 /* FloatingButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009F6528D7929900A43D63 /* FloatingButtonView.swift */; };
 		AB009F6D28D7929900A43D63 /* SearchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009F6628D7929900A43D63 /* SearchButton.swift */; };
+		AB009FA228D8C5B500A43D63 /* MeetUpNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009FA028D8C5B500A43D63 /* MeetUpNetworkService.swift */; };
+		AB009FA328D8C5B500A43D63 /* MeetUpNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009FA128D8C5B500A43D63 /* MeetUpNetwork.swift */; };
+		AB009FA528D8C5CE00A43D63 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009FA428D8C5CE00A43D63 /* MainView.swift */; };
+		AB009FAD28D8C5E000A43D63 /* PostDetailStateHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009FA628D8C5E000A43D63 /* PostDetailStateHolder.swift */; };
+		AB009FAE28D8C5E000A43D63 /* PostDetailBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009FA828D8C5E000A43D63 /* PostDetailBackButton.swift */; };
+		AB009FAF28D8C5E000A43D63 /* PostDetailInfoArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009FA928D8C5E000A43D63 /* PostDetailInfoArea.swift */; };
+		AB009FB028D8C5E000A43D63 /* PostDetailBodyArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009FAA28D8C5E000A43D63 /* PostDetailBodyArea.swift */; };
+		AB009FB128D8C5E000A43D63 /* PostDetailTitleArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009FAB28D8C5E000A43D63 /* PostDetailTitleArea.swift */; };
+		AB009FB228D8C5E000A43D63 /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009FAC28D8C5E000A43D63 /* PostDetailView.swift */; };
+		AB009FB428D8C61A00A43D63 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009FB328D8C61A00A43D63 /* DeviceInfo.swift */; };
+		AB009FB728D8C64300A43D63 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009FB628D8C64300A43D63 /* Post.swift */; };
 		ABD4874228D6F99500FFD3A1 /* Module_MeetUPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD4874128D6F99500FFD3A1 /* Module_MeetUPApp.swift */; };
-		ABD4874428D6F99500FFD3A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD4874328D6F99500FFD3A1 /* ContentView.swift */; };
 		ABD4874628D6F99600FFD3A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABD4874528D6F99600FFD3A1 /* Assets.xcassets */; };
-		ABD4875428D6FA1C00FFD3A1 /* PostDetailViewTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD4875328D6FA1C00FFD3A1 /* PostDetailViewTemp.swift */; };
-		ABD4875828D6FA8100FFD3A1 /* NetworkModuleTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD4875728D6FA8100FFD3A1 /* NetworkModuleTemp.swift */; };
 		ABD4875B28D6FAD300FFD3A1 /* JsonDecodertemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD4875A28D6FAD300FFD3A1 /* JsonDecodertemp.swift */; };
-		ABD4875F28D6FB1C00FFD3A1 /* GlobalTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD4875E28D6FB1C00FFD3A1 /* GlobalTemp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,14 +44,21 @@
 		AB009F6428D7929900A43D63 /* BackButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackButtonView.swift; sourceTree = "<group>"; };
 		AB009F6528D7929900A43D63 /* FloatingButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingButtonView.swift; sourceTree = "<group>"; };
 		AB009F6628D7929900A43D63 /* SearchButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchButton.swift; sourceTree = "<group>"; };
+		AB009FA028D8C5B500A43D63 /* MeetUpNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetUpNetworkService.swift; sourceTree = "<group>"; };
+		AB009FA128D8C5B500A43D63 /* MeetUpNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetUpNetwork.swift; sourceTree = "<group>"; };
+		AB009FA428D8C5CE00A43D63 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		AB009FA628D8C5E000A43D63 /* PostDetailStateHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailStateHolder.swift; sourceTree = "<group>"; };
+		AB009FA828D8C5E000A43D63 /* PostDetailBackButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailBackButton.swift; sourceTree = "<group>"; };
+		AB009FA928D8C5E000A43D63 /* PostDetailInfoArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailInfoArea.swift; sourceTree = "<group>"; };
+		AB009FAA28D8C5E000A43D63 /* PostDetailBodyArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailBodyArea.swift; sourceTree = "<group>"; };
+		AB009FAB28D8C5E000A43D63 /* PostDetailTitleArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailTitleArea.swift; sourceTree = "<group>"; };
+		AB009FAC28D8C5E000A43D63 /* PostDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
+		AB009FB328D8C61A00A43D63 /* DeviceInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
+		AB009FB628D8C64300A43D63 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		ABD4873E28D6F99500FFD3A1 /* Module-MeetUP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Module-MeetUP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABD4874128D6F99500FFD3A1 /* Module_MeetUPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module_MeetUPApp.swift; sourceTree = "<group>"; };
-		ABD4874328D6F99500FFD3A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ABD4874528D6F99600FFD3A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		ABD4875328D6FA1C00FFD3A1 /* PostDetailViewTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewTemp.swift; sourceTree = "<group>"; };
-		ABD4875728D6FA8100FFD3A1 /* NetworkModuleTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModuleTemp.swift; sourceTree = "<group>"; };
 		ABD4875A28D6FAD300FFD3A1 /* JsonDecodertemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDecodertemp.swift; sourceTree = "<group>"; };
-		ABD4875E28D6FB1C00FFD3A1 /* GlobalTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalTemp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +102,25 @@
 			path = PostsListViewComponents;
 			sourceTree = "<group>";
 		};
+		AB009FA728D8C5E000A43D63 /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				AB009FA828D8C5E000A43D63 /* PostDetailBackButton.swift */,
+				AB009FA928D8C5E000A43D63 /* PostDetailInfoArea.swift */,
+				AB009FAA28D8C5E000A43D63 /* PostDetailBodyArea.swift */,
+				AB009FAB28D8C5E000A43D63 /* PostDetailTitleArea.swift */,
+			);
+			path = ViewComponents;
+			sourceTree = "<group>";
+		};
+		AB009FB528D8C64300A43D63 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB009FB628D8C64300A43D63 /* Post.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		ABD4873528D6F99500FFD3A1 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +144,7 @@
 				ABD4875D28D6FB1100FFD3A1 /* Global */,
 				ABD4875928D6FABE00FFD3A1 /* JsonDecoder */,
 				ABD4875628D6FA6700FFD3A1 /* NetworkModule */,
+				AB009FB528D8C64300A43D63 /* Model */,
 				ABD4875528D6FA4400FFD3A1 /* Screens */,
 				ABD4876028D6FB3F00FFD3A1 /* Resources */,
 				AB009F4F28D6FCE400A43D63 /* Preview Content */,
@@ -130,7 +164,9 @@
 		ABD4875228D6FA0600FFD3A1 /* PostDetailView */ = {
 			isa = PBXGroup;
 			children = (
-				ABD4875328D6FA1C00FFD3A1 /* PostDetailViewTemp.swift */,
+				AB009FA628D8C5E000A43D63 /* PostDetailStateHolder.swift */,
+				AB009FAC28D8C5E000A43D63 /* PostDetailView.swift */,
+				AB009FA728D8C5E000A43D63 /* ViewComponents */,
 			);
 			path = PostDetailView;
 			sourceTree = "<group>";
@@ -138,7 +174,7 @@
 		ABD4875528D6FA4400FFD3A1 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				ABD4874328D6F99500FFD3A1 /* ContentView.swift */,
+				AB009FA428D8C5CE00A43D63 /* MainView.swift */,
 				ABD4874F28D6F9B400FFD3A1 /* PostsListView */,
 				ABD4875228D6FA0600FFD3A1 /* PostDetailView */,
 			);
@@ -148,7 +184,8 @@
 		ABD4875628D6FA6700FFD3A1 /* NetworkModule */ = {
 			isa = PBXGroup;
 			children = (
-				ABD4875728D6FA8100FFD3A1 /* NetworkModuleTemp.swift */,
+				AB009FA128D8C5B500A43D63 /* MeetUpNetwork.swift */,
+				AB009FA028D8C5B500A43D63 /* MeetUpNetworkService.swift */,
 			);
 			path = NetworkModule;
 			sourceTree = "<group>";
@@ -173,7 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				2A48679128D746A30011FE44 /* Extension */,
-				ABD4875E28D6FB1C00FFD3A1 /* GlobalTemp.swift */,
+				AB009FB328D8C61A00A43D63 /* DeviceInfo.swift */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -256,21 +293,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB009FB128D8C5E000A43D63 /* PostDetailTitleArea.swift in Sources */,
+				AB009FB728D8C64300A43D63 /* Post.swift in Sources */,
+				AB009FA228D8C5B500A43D63 /* MeetUpNetworkService.swift in Sources */,
 				AB009F6928D7929900A43D63 /* PostCellView.swift in Sources */,
-				ABD4874428D6F99500FFD3A1 /* ContentView.swift in Sources */,
 				AB009F6A28D7929900A43D63 /* PostsListTitleView.swift in Sources */,
 				ABD4874228D6F99500FFD3A1 /* Module_MeetUPApp.swift in Sources */,
-				ABD4875428D6FA1C00FFD3A1 /* PostDetailViewTemp.swift in Sources */,
+				AB009FAE28D8C5E000A43D63 /* PostDetailBackButton.swift in Sources */,
 				AB009F6828D7929900A43D63 /* SectionDividerView.swift in Sources */,
-				ABD4875828D6FA8100FFD3A1 /* NetworkModuleTemp.swift in Sources */,
+				AB009FA328D8C5B500A43D63 /* MeetUpNetwork.swift in Sources */,
+				AB009FAF28D8C5E000A43D63 /* PostDetailInfoArea.swift in Sources */,
 				AB009F6D28D7929900A43D63 /* SearchButton.swift in Sources */,
-				ABD4875F28D6FB1C00FFD3A1 /* GlobalTemp.swift in Sources */,
+				AB009FB228D8C5E000A43D63 /* PostDetailView.swift in Sources */,
+				AB009FA528D8C5CE00A43D63 /* MainView.swift in Sources */,
+				AB009FAD28D8C5E000A43D63 /* PostDetailStateHolder.swift in Sources */,
 				2A48679328D746BA0011FE44 /* ViewExtension.swift in Sources */,
+				AB009FB428D8C61A00A43D63 /* DeviceInfo.swift in Sources */,
 				AB009F6728D7929900A43D63 /* PostsListView.swift in Sources */,
 				ABD4875B28D6FAD300FFD3A1 /* JsonDecodertemp.swift in Sources */,
 				AB009F6C28D7929900A43D63 /* FloatingButtonView.swift in Sources */,
 				AB009F6B28D7929900A43D63 /* BackButtonView.swift in Sources */,
 				2AC77E8628D873710038514F /* RefreshableScrollView.swift in Sources */,
+				AB009FB028D8C5E000A43D63 /* PostDetailBodyArea.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
