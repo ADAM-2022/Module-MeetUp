@@ -26,7 +26,7 @@ struct PostsListView: View {
     }
 }
 
-//FIXME: ForEach문 전부 변경 필요
+//TODO: ForEach문 전부 변경 필요
 struct PopularPostsSectionView: View {
     var body: some View {
         VStack(alignment:.leading, spacing: .zero) {
@@ -38,6 +38,7 @@ struct PopularPostsSectionView: View {
             ForEach(0 ..< 2, id: \.self) { postNum in
                 PostCellView()
                 if postNum < 1 {
+                    //TODO: 공통 Divider 컴포넌트로 교체 예정
                     Divider()
                 }
             }
