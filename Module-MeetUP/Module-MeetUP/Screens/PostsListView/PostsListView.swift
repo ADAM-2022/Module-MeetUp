@@ -10,13 +10,18 @@ import SwiftUI
 struct PostsListView: View {
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
-                VStack(alignment: .leading, spacing: .zero) {
-                    PostsListTitleView()
-                    ScrollView(showsIndicators: false) {
-                    PopularPostsSectionView()
-                    SectionDividerView()
-                    TotalPostsSectionView()
-                    Spacer()
+            VStack(alignment: .leading, spacing: .zero) {
+                PostsListTitleView()
+                RefreshableScrollView(onRefresh: { refrashDone in
+                    //TODO: 새로고침될 항목 들어갈 부분
+                    refrashDone()
+                }) {
+                    VStack(spacing: .zero) {
+                        PopularPostsSectionView()
+                        SectionDividerView()
+                        TotalPostsSectionView()
+                        Spacer()
+                    }
                 }
             }
             FloatingButtonView()
@@ -26,7 +31,7 @@ struct PostsListView: View {
     }
 }
 
-//FIXME: ForEach문 전부 변경 필요
+//TODO: ForEach문 전부 변경 필요
 struct PopularPostsSectionView: View {
     var body: some View {
         VStack(alignment:.leading, spacing: .zero) {
@@ -38,6 +43,7 @@ struct PopularPostsSectionView: View {
             ForEach(0 ..< 2, id: \.self) { postNum in
                 PostCellView()
                 if postNum < 1 {
+                    //TODO: 공통 Divider 컴포넌트로 교체 예정
                     Divider()
                 }
             }

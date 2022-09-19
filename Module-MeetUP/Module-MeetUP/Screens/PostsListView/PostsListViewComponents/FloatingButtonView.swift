@@ -10,7 +10,7 @@ import SwiftUI
 struct FloatingButtonView: View {
     var body: some View {
         Button {
-            //FIXME: 버튼 눌렀을 시 글쓰기 뷰로
+            //TODO: 버튼 눌렀을 시 글쓰기 뷰로
         } label: {
             Text("글쓰기")
                 .fontWeight(.bold)
