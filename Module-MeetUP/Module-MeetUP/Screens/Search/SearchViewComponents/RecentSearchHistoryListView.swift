@@ -11,7 +11,7 @@ struct RecentSearchHistoryListView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: .zero) {
             RecentSearchHistoryListTitleView()
-            ForEach(0..<5, id: \.self) { _ in
+            ForEach(0 ..< 5, id: \.self) { _ in
                 RecentSearchHistoryCellView()
             }
             Spacer()
