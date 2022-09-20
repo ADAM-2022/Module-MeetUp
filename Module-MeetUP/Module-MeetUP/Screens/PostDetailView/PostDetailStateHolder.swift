@@ -5,14 +5,7 @@
 //  Created by Noah Park on 2022/09/18.
 //
 
-import SwiftUI
+import Foundation
+import Combine
 
-class PostDetailStateHolder: ObservableObject {
-    
-    let postId: Int?
-    
-    init(postId: Int) {
-        self.postId = postId
-    }
-}
 
