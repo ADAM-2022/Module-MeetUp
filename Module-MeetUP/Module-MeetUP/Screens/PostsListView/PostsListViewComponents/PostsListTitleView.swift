@@ -19,7 +19,7 @@ struct PostsListTitleView: View {
             Spacer()
             SearchButton()
         }
-        .padding(EdgeInsets(top: 60, leading: 20, bottom: 16, trailing: 20))
+        .padding(EdgeInsets(top: hasTopNotch ? 60 : 30, leading: 20, bottom: 16, trailing: 20))
     }
 }
 
