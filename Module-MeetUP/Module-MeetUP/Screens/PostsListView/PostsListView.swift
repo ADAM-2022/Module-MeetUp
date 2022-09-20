@@ -71,6 +71,11 @@ struct TotalPostsSectionView: View {
 
 struct PostsListView_Previews: PreviewProvider {
     static var previews: some View {
-        PostsListView()
+        Group {
+            PostsListView()
+                .previewDevice(PreviewDevice(rawValue: "iPhone SE"))
+            PostsListView()
+                .previewDevice(PreviewDevice(rawValue: "iPhone 13"))
+        }
     }
 }
