@@ -52,8 +52,9 @@ class MeetUpNetworkService: MeetUpNetwork {
 
 private extension MeetUpNetworkService {
     struct MeetUpAPI {
-        static let scheme = "https"
-        static let host = "poding.site:8080"
+        static let scheme = "http"
+        static let host = "poding.site"
+        static let port = 8080
         static let postsPath = "/posts"
         // MARK: 이곳에 각자의 Path를 적으면 됩니다.
     }
@@ -63,6 +64,7 @@ private extension MeetUpNetworkService {
         var components = URLComponents()
         components.scheme = MeetUpAPI.scheme
         components.host = MeetUpAPI.host
+        components.port = MeetUpAPI.port
         components.path = MeetUpAPI.postsPath + "/\(postId)"
         return components
     }
