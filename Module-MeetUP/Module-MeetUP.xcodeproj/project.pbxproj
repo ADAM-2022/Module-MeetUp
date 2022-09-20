@@ -113,12 +113,12 @@
 			path = ViewComponents;
 			sourceTree = "<group>";
 		};
-		AB009FB528D8C64300A43D63 /* Model */ = {
+		AB009FB528D8C64300A43D63 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
 				AB009FB628D8C64300A43D63 /* Post.swift */,
 			);
-			path = Model;
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		ABD4873528D6F99500FFD3A1 = {
@@ -144,7 +144,7 @@
 				ABD4875D28D6FB1100FFD3A1 /* Global */,
 				ABD4875928D6FABE00FFD3A1 /* JsonDecoder */,
 				ABD4875628D6FA6700FFD3A1 /* NetworkModule */,
-				AB009FB528D8C64300A43D63 /* Model */,
+				AB009FB528D8C64300A43D63 /* Entity */,
 				ABD4875528D6FA4400FFD3A1 /* Screens */,
 				ABD4876028D6FB3F00FFD3A1 /* Resources */,
 				AB009F4F28D6FCE400A43D63 /* Preview Content */,
