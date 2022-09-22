@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct RecentSearchHistoryListView: View {
+    @StateObject var searchStates: SearchStateHolder
+    let userDefaults = UserDefaults.standard
     var body: some View {
         VStack(alignment: .leading, spacing: .zero) {
             RecentSearchHistoryListTitleView()
-            ForEach(0 ..< 5, id: \.self) { _ in
-                RecentSearchHistoryCellView()
+            ForEach(searchStates.searchHistorys, id: \.self) { recentSearchHistory in
+                RecentSearchHistoryCellView(recentHistory: recentSearchHistory)
             }
             Spacer()
         }
@@ -41,12 +43,14 @@ struct RecentSearchHistoryListTitleView: View {
 
 struct RecentSearchHistoryCellView: View {
     
+    let recentHistory: String
+    
     var body: some View {
         VStack(spacing: .zero) {
             //TODO: Divider 공통 컴포넌트로 변경 예정
             Divider()
             HStack(alignment:.center, spacing: .zero) {
-                Text("스터디")
+                Text(recentHistory)
                     .font(.callout)
                     .foregroundColor(.black)
                 Spacer()
@@ -71,6 +75,7 @@ struct RecentSearchHistoryCellView: View {
 
 struct RecentSearchListView_Previews: PreviewProvider {
     static var previews: some View {
-        RecentSearchHistoryListView()
+        RecentSearchHistoryListView(searchStates: SearchStateHolder())
     }
 }
+
