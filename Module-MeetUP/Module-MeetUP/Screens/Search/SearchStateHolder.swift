@@ -9,5 +9,9 @@ import SwiftUI
 
 final class SearchStateHolder: ObservableObject {
     @Published var searchContent: String = ""
-    @Published var searchHistorys: [String] = []
+    @Published var searchHistorys: [String] = UserDefaults.standard.searchHistorys {
+        didSet {
+            UserDefaults.standard.searchHistorys = self.searchHistorys
+        }
+    }
 }

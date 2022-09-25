@@ -16,7 +16,8 @@ struct SearchBarView: View {
                 .font(.callout)
             Spacer()
             Button {
-                //TODO: 검색 결과 출력 화면으로 이동
+                searchStates.searchHistorys.append(searchStates.searchContent)
+                UserDefaults.standard.set(searchStates.searchHistorys, forKey: "searchHistorys")
             } label: {
                 Image(systemName: "magnifyingglass")
                     .resizable()

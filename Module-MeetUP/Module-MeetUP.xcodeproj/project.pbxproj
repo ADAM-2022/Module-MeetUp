@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A0AD6A128E05CC0003BA00F /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0AD6A028E05CC0003BA00F /* UserDefaultsExtension.swift */; };
 		2A48679328D746BA0011FE44 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A48679228D746BA0011FE44 /* ViewExtension.swift */; };
 		2ABA33D028D967FC00A16804 /* RecentSearchHistoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABA33CF28D967FC00A16804 /* RecentSearchHistoryListView.swift */; };
 		2ABDC53C28D96D8900A3D1E6 /* SearchBackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABDC53B28D96D8900A3D1E6 /* SearchBackButtonView.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A0AD6A028E05CC0003BA00F /* UserDefaultsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtension.swift; sourceTree = "<group>"; };
 		2A48679228D746BA0011FE44 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		2ABA33CF28D967FC00A16804 /* RecentSearchHistoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearchHistoryListView.swift; sourceTree = "<group>"; };
 		2ABDC53B28D96D8900A3D1E6 /* SearchBackButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBackButtonView.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				2A48679228D746BA0011FE44 /* ViewExtension.swift */,
+				2A0AD6A028E05CC0003BA00F /* UserDefaultsExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 			files = (
 				AB009FB128D8C5E000A43D63 /* PostDetailTitleArea.swift in Sources */,
 				AB009FB728D8C64300A43D63 /* Post.swift in Sources */,
+				2A0AD6A128E05CC0003BA00F /* UserDefaultsExtension.swift in Sources */,
 				2ABDC53C28D96D8900A3D1E6 /* SearchBackButtonView.swift in Sources */,
 				AB009FA228D8C5B500A43D63 /* MeetUpNetworkService.swift in Sources */,
 				AB009F6928D7929900A43D63 /* PostCellView.swift in Sources */,
@@ -411,7 +415,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -465,7 +469,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

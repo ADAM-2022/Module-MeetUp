@@ -9,7 +9,6 @@ import SwiftUI
 
 struct RecentSearchHistoryListView: View {
     @StateObject var searchStates: SearchStateHolder
-    let userDefaults = UserDefaults.standard
     var body: some View {
         VStack(alignment: .leading, spacing: .zero) {
             RecentSearchHistoryListTitleView()
@@ -19,6 +18,7 @@ struct RecentSearchHistoryListView: View {
             Spacer()
         }
         .padding(EdgeInsets(top: 19, leading: .zero, bottom: .zero, trailing: .zero))
+
     }
 }
 
@@ -61,7 +61,7 @@ struct RecentSearchHistoryCellView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 17)
-                        .fontWeight(.light)
+                        //.fontWeight(.light)
                         .foregroundColor(.gray)
                 }
 
