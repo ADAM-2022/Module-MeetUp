@@ -26,7 +26,6 @@ struct PostCellView: View {
                     Text("•")
                     Text("조회수 \(postViews)")
                 }
-                .fontWeight(.semibold)
                 .foregroundColor(.gray)
                 .font(.callout)
             }

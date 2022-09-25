@@ -14,4 +14,18 @@ final class SearchStateHolder: ObservableObject {
             UserDefaults.standard.searchHistorys = self.searchHistorys
         }
     }
+    
+    func initializeSearchContent() {
+        searchContent = ""
+    }
+    
+    func updateSearchHistorys() {
+        if searchHistorys.count > 4 {
+            searchHistorys.remove(at: 0)
+            searchHistorys.append(searchContent)
+        }
+        else {
+            searchHistorys.append(searchContent)
+        }
+    }
 }
