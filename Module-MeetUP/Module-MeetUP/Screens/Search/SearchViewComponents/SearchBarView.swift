@@ -16,8 +16,7 @@ struct SearchBarView: View {
                 .font(.callout)
             Spacer()
             Button {
-                searchStates.updateSearchHistorys()
-                searchStates.initializeSearchContent()
+                searchStates.updateSearchContent()
             } label: {
                 Image(systemName: "magnifyingglass")
                     .resizable()

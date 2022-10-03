@@ -9,23 +9,21 @@ import SwiftUI
 
 final class SearchStateHolder: ObservableObject {
     @Published var searchContent: String = ""
-    @Published var searchHistorys: [String] = UserDefaults.standard.searchHistorys {
-        didSet {
-            UserDefaults.standard.searchHistorys = self.searchHistorys
+    @AppStorage("searchHistorys") var _searchHistorys: [String] = []
+    
+    var searchHistorys: [String] {
+        get { return _searchHistorys }
+        set {
+            if newValue.count > 4 {
+                _searchHistorys.remove(at: 0)
+            }
         }
     }
     
-    func initializeSearchContent() {
+    func updateSearchContent() {
+        _searchHistorys.append(searchContent)
+        searchHistorys = _searchHistorys
         searchContent = ""
     }
-    
-    func updateSearchHistorys() {
-        if searchHistorys.count > 4 {
-            searchHistorys.remove(at: 0)
-            searchHistorys.append(searchContent)
-        }
-        else {
-            searchHistorys.append(searchContent)
-        }
-    }
+
 }
