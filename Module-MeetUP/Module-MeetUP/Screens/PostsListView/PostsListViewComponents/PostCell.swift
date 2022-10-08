@@ -8,7 +8,7 @@
 import SwiftUI
 
 //TODO: 색상 변경 필요
-struct PostCellView: View {
+struct PostCell: View {
     //TODO: 임시 게시글 정보 변경 필요
     let postTitle: String = "포스트 타이틀"
     let postWriter: String = "글쓴이"
@@ -26,7 +26,6 @@ struct PostCellView: View {
                     Text("•")
                     Text("조회수 \(postViews)")
                 }
-                .fontWeight(.semibold)
                 .foregroundColor(.gray)
                 .font(.callout)
             }
@@ -73,8 +72,8 @@ struct PostImageView: View {
     
 }
 
-struct PostCellView_Previews: PreviewProvider {
+struct PostCell_Previews: PreviewProvider {
     static var previews: some View {
-        PostCellView()
+        PostCell()
     }
 }

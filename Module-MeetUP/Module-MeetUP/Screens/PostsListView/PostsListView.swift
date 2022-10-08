@@ -9,23 +9,19 @@ import SwiftUI
 
 struct PostsListView: View {
     var body: some View {
-        ZStack(alignment: .bottomTrailing) {
-            VStack(alignment: .leading, spacing: .zero) {
-                PostsListTitleView()
-                RefreshableScrollView(onRefresh: { refrashDone in
-                    //TODO: 새로고침될 항목 들어갈 부분
-                    refrashDone()
-                }) {
-                    VStack(spacing: .zero) {
-                        PopularPostsSectionView()
-                        SectionDividerView()
-                        TotalPostsSectionView()
-                        Spacer()
-                    }
+        VStack(alignment: .leading, spacing: .zero) {
+            PostsListTitleView()
+            RefreshableScrollView(onRefresh: { refrashDone in
+                //TODO: 새로고침될 항목 들어갈 부분
+                refrashDone()
+            }) {
+                VStack(spacing: .zero) {
+                    PopularPostsSectionView()
+                    SectionDividerView()
+                    TotalPostsSectionView()
+                    Spacer()
                 }
             }
-            FloatingButtonView()
-                .padding(EdgeInsets(top: .zero, leading: .zero, bottom: 44, trailing: 19))
         }
         .ignoresSafeArea()
     }
@@ -41,7 +37,7 @@ struct PopularPostsSectionView: View {
                 .font(.system(size: 18))
                 .padding(EdgeInsets(top: 16, leading: 20, bottom: 9, trailing: 20))
             ForEach(0 ..< 2, id: \.self) { postNum in
-                PostCellView()
+                PostCell()
                 if postNum < 1 {
                     //TODO: 공통 Divider 컴포넌트로 교체 예정
                     Divider()
@@ -61,7 +57,7 @@ struct TotalPostsSectionView: View {
                 .padding(EdgeInsets(top: .zero, leading: 20, bottom: 9, trailing: 20))
             
             ForEach(0 ..< 10, id: \.self) { _ in
-                PostCellView()
+                PostCell()
                 Divider()
             }
         }
