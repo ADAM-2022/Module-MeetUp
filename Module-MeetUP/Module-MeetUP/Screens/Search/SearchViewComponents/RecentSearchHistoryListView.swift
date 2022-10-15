@@ -13,8 +13,8 @@ struct RecentSearchHistoryListView: View {
         VStack(alignment: .leading, spacing: .zero) {
             RecentSearchHistoryListTitleView(searchStates: searchStates)
             if searchStates._searchHistorys != [] {
-                ForEach(searchStates.searchHistorys, id: \.self) { recentSearchHistory in
-                    RecentSearchHistoryCell(recentHistory: recentSearchHistory)
+                ForEach(0 ..< searchStates.searchHistorys.count, id: \.self) { recentSearchHistoryIndex in
+                    RecentSearchHistoryCell(searchStates: searchStates, recentHistory: searchStates.searchHistorys[recentSearchHistoryIndex], recentHistoryIndex: recentSearchHistoryIndex)
                 }
             }
             else {
@@ -34,13 +34,14 @@ struct RecentSearchHistoryListTitleView: View {
             Text("최근 검색어")
                 .font(.system(size: 18).bold())
             Spacer()
-            //TODO: 분기처리 필요
-            Button {
-                searchStates.resetSearchHistorys()
-            } label: {
-                Text("전체 삭제")
-                    .font(.callout)
-                    .foregroundColor(.gray)
+            if searchStates._searchHistorys != [] {
+                Button {
+                    searchStates.resetSearchHistorys()
+                } label: {
+                    Text("전체 삭제")
+                        .font(.callout)
+                        .foregroundColor(.gray)
+                }
             }
         }
         .padding(EdgeInsets(top: .zero, leading: 20, bottom: 10, trailing: 20))
@@ -60,7 +61,9 @@ struct NoneRecentSearchHistorysView: View {
 
 struct RecentSearchHistoryCell: View {
     
+    @StateObject var searchStates: SearchStateHolder
     let recentHistory: String
+    let recentHistoryIndex: Int
     
     var body: some View {
         VStack(spacing: .zero) {
@@ -72,13 +75,12 @@ struct RecentSearchHistoryCell: View {
                     .foregroundColor(.black)
                 Spacer()
                 Button {
-                    //TODO: 최근 검색어 삭제
+                    searchStates._searchHistorys.remove(at: recentHistoryIndex)
                 } label: {
                     Image(systemName: "xmark")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 17)
-                        //.fontWeight(.light)
                         .foregroundColor(.gray)
                 }
 

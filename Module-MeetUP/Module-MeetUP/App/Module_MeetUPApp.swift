@@ -11,7 +11,7 @@ import SwiftUI
 struct Module_MeetUPApp: App {
     var body: some Scene {
         WindowGroup {
-            SearchView(searchStates: SearchStateHolder())
+            MainView()
         }
     }
 }
