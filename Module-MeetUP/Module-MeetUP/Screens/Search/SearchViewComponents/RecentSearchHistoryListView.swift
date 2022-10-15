@@ -12,8 +12,13 @@ struct RecentSearchHistoryListView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: .zero) {
             RecentSearchHistoryListTitleView(searchStates: searchStates)
-            ForEach(searchStates.searchHistorys, id: \.self) { recentSearchHistory in
-                RecentSearchHistoryCellView(recentHistory: recentSearchHistory)
+            if searchStates._searchHistorys != [] {
+                ForEach(searchStates.searchHistorys, id: \.self) { recentSearchHistory in
+                    RecentSearchHistoryCell(recentHistory: recentSearchHistory)
+                }
+            }
+            else {
+                NoneRecentSearchHistorysView()
             }
             Spacer()
         }
@@ -42,14 +47,25 @@ struct RecentSearchHistoryListTitleView: View {
     }
 }
 
-struct RecentSearchHistoryCellView: View {
+struct NoneRecentSearchHistorysView: View {
+    var body: some View {
+        VStack(spacing:. zero) {
+            Divider()
+                .padding(EdgeInsets(top: 7, leading: 20, bottom: 23, trailing: 20))
+            Text("최근 검색 항목이 존재하지 않습니다.")
+                .font(.callout)
+        }
+    }
+}
+
+struct RecentSearchHistoryCell: View {
     
     let recentHistory: String
     
     var body: some View {
         VStack(spacing: .zero) {
             //TODO: Divider 공통 컴포넌트로 변경 예정
-            Divider()
+            //Divider()
             HStack(alignment:.center, spacing: .zero) {
                 Text(recentHistory)
                     .font(.callout)
