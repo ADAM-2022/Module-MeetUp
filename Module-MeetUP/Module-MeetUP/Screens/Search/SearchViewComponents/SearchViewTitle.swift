@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct SearchViewTitle: View {
+    @StateObject var searchStates: SearchStateHolder
     var body: some View {
         HStack(spacing: 8) {
             SearchBackButtonView()
-            SearchBarView()
+            SearchBarView(searchStates: searchStates)
         }
         .padding(EdgeInsets(top: hasTopNotch ? 51 : 11, leading: 20, bottom: .zero, trailing: 20))
     }
@@ -19,6 +20,6 @@ struct SearchViewTitle: View {
 
 struct SearchViewTitle_Previews: PreviewProvider {
     static var previews: some View {
-        SearchViewTitle()
+        SearchViewTitle(searchStates: SearchStateHolder())
     }
 }

@@ -9,14 +9,14 @@ import SwiftUI
 
 struct SearchBarView: View {
     //TODO: 임시 텍스트필드 변수 변경 예정
-    @State private var text = ""
+    @StateObject var searchStates: SearchStateHolder
     var body: some View {
         HStack(spacing: .zero){
-            TextField("찾고싶은 제목, 내용을 입력해주세요", text: $text)
+            TextField("찾고싶은 제목, 내용을 입력해주세요", text: $searchStates.searchContent)
                 .font(.callout)
             Spacer()
             Button {
-                //TODO: 검색 결과 출력 화면으로 이동
+                searchStates.updateSearchContent()
             } label: {
                 Image(systemName: "magnifyingglass")
                     .resizable()
@@ -33,6 +33,6 @@ struct SearchBarView: View {
 
 struct SearchBarView_Previews: PreviewProvider {
     static var previews: some View {
-        SearchBarView()
+        SearchBarView(searchStates: SearchStateHolder())
     }
 }
