@@ -25,5 +25,9 @@ final class SearchStateHolder: ObservableObject {
         searchHistorys = _searchHistorys
         searchContent = ""
     }
+    
+    func resetSearchHistorys() {
+        _searchHistorys.removeAll()
+    }
 
 }

@@ -11,7 +11,7 @@ struct RecentSearchHistoryListView: View {
     @StateObject var searchStates: SearchStateHolder
     var body: some View {
         VStack(alignment: .leading, spacing: .zero) {
-            RecentSearchHistoryListTitleView()
+            RecentSearchHistoryListTitleView(searchStates: searchStates)
             ForEach(searchStates.searchHistorys, id: \.self) { recentSearchHistory in
                 RecentSearchHistoryCellView(recentHistory: recentSearchHistory)
             }
@@ -23,6 +23,7 @@ struct RecentSearchHistoryListView: View {
 }
 
 struct RecentSearchHistoryListTitleView: View {
+    @StateObject var searchStates: SearchStateHolder
     var body: some View {
         HStack(alignment:.top, spacing: .zero) {
             Text("최근 검색어")
@@ -30,7 +31,7 @@ struct RecentSearchHistoryListTitleView: View {
             Spacer()
             //TODO: 분기처리 필요
             Button {
-                //TODO: 전체 삭제 로직
+                searchStates.resetSearchHistorys()
             } label: {
                 Text("전체 삭제")
                     .font(.callout)
