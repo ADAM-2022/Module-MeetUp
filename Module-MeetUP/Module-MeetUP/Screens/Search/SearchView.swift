@@ -15,6 +15,7 @@ struct SearchView: View {
             RecentSearchHistoryListView(searchStates: searchStates)
             Spacer()
         }
+        .ignoresSafeArea(.keyboard)
     }
 }
 
