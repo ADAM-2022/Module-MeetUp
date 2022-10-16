@@ -12,7 +12,7 @@ struct RecentSearchHistoryListView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: .zero) {
             RecentSearchHistoryListTitleView(searchStates: searchStates)
-            if searchStates._searchHistorys != [] {
+            if !searchStates._searchHistorys.isEmpty {
                 ForEach(0 ..< searchStates.searchHistorys.count, id: \.self) { recentSearchHistoryIndex in
                     RecentSearchHistoryCell(searchStates: searchStates, recentHistory: searchStates.searchHistorys[recentSearchHistoryIndex], recentHistoryIndex: recentSearchHistoryIndex)
                 }
@@ -34,7 +34,7 @@ struct RecentSearchHistoryListTitleView: View {
             Text("최근 검색어")
                 .font(.system(size: 18).bold())
             Spacer()
-            if searchStates._searchHistorys != [] {
+            if !searchStates._searchHistorys.isEmpty {
                 Button {
                     searchStates.resetSearchHistorys()
                 } label: {
@@ -68,7 +68,6 @@ struct RecentSearchHistoryCell: View {
     var body: some View {
         VStack(spacing: .zero) {
             //TODO: Divider 공통 컴포넌트로 변경 예정
-            //Divider()
             HStack(alignment:.center, spacing: .zero) {
                 Text(recentHistory)
                     .font(.callout)
