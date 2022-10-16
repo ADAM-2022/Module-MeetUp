@@ -11,9 +11,9 @@ struct PostsListView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: .zero) {
             PostsListTitleView()
-            RefreshableScrollView(onRefresh: { refrashDone in
+            RefreshableScrollView(onRefresh: { refreshDone in
                 //TODO: 새로고침될 항목 들어갈 부분
-                refrashDone()
+                refreshDone()
             }) {
                 VStack(spacing: .zero) {
                     PopularPostsSectionView()
