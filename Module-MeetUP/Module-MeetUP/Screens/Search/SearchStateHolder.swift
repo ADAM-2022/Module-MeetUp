@@ -14,7 +14,7 @@ final class SearchStateHolder: ObservableObject {
     var searchHistorys: [String] {
         get { return _searchHistorys }
         set {
-            if newValue.count > 4 {
+            if newValue.count > 5 {
                 _searchHistorys.remove(at: 0)
             }
         }
@@ -24,6 +24,10 @@ final class SearchStateHolder: ObservableObject {
         _searchHistorys.append(searchContent)
         searchHistorys = _searchHistorys
         searchContent = ""
+    }
+    
+    func resetSearchHistorys() {
+        _searchHistorys.removeAll()
     }
 
 }
