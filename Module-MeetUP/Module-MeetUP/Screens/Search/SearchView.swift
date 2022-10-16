@@ -8,17 +8,19 @@
 import SwiftUI
 
 struct SearchView: View {
+    @ObservedObject var searchStates: SearchStateHolder
     var body: some View {
         VStack(alignment: .leading, spacing: .zero) {
-            SearchViewTitle()
-            RecentSearchHistoryListView()
+            SearchViewTitle(searchStates: searchStates)
+            RecentSearchHistoryListView(searchStates: searchStates)
             Spacer()
         }
+        .ignoresSafeArea(.keyboard)
     }
 }
 
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
-        SearchView()
+        SearchView(searchStates: SearchStateHolder())
     }
 }

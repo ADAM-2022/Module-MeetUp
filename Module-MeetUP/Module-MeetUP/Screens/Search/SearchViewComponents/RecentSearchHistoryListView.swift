@@ -8,56 +8,78 @@
 import SwiftUI
 
 struct RecentSearchHistoryListView: View {
+    @StateObject var searchStates: SearchStateHolder
     var body: some View {
         VStack(alignment: .leading, spacing: .zero) {
-            RecentSearchHistoryListTitleView()
-            ForEach(0 ..< 5, id: \.self) { _ in
-                RecentSearchHistoryCellView()
+            RecentSearchHistoryListTitleView(searchStates: searchStates)
+            if !searchStates._searchHistorys.isEmpty {
+                ForEach(0 ..< searchStates.searchHistorys.count, id: \.self) { recentSearchHistoryIndex in
+                    RecentSearchHistoryCell(searchStates: searchStates, recentHistory: searchStates.searchHistorys[recentSearchHistoryIndex], recentHistoryIndex: recentSearchHistoryIndex)
+                }
+            }
+            else {
+                NoneRecentSearchHistorysView()
             }
             Spacer()
         }
         .padding(EdgeInsets(top: 19, leading: .zero, bottom: .zero, trailing: .zero))
+
     }
 }
 
 struct RecentSearchHistoryListTitleView: View {
+    @StateObject var searchStates: SearchStateHolder
     var body: some View {
         HStack(alignment:.top, spacing: .zero) {
             Text("최근 검색어")
                 .font(.system(size: 18).bold())
             Spacer()
-            //TODO: 분기처리 필요
-            Button {
-                //TODO: 전체 삭제 로직
-            } label: {
-                Text("전체 삭제")
-                    .font(.callout)
-                    .foregroundColor(.gray)
+            if !searchStates._searchHistorys.isEmpty {
+                Button {
+                    searchStates.resetSearchHistorys()
+                } label: {
+                    Text("전체 삭제")
+                        .font(.callout)
+                        .foregroundColor(.gray)
+                }
             }
         }
         .padding(EdgeInsets(top: .zero, leading: 20, bottom: 10, trailing: 20))
     }
 }
 
-struct RecentSearchHistoryCellView: View {
+struct NoneRecentSearchHistorysView: View {
+    var body: some View {
+        VStack(spacing:. zero) {
+            Divider()
+                .padding(EdgeInsets(top: 7, leading: 20, bottom: 23, trailing: 20))
+            Text("최근 검색 항목이 존재하지 않습니다.")
+                .font(.callout)
+        }
+    }
+}
+
+struct RecentSearchHistoryCell: View {
+    
+    @StateObject var searchStates: SearchStateHolder
+    let recentHistory: String
+    let recentHistoryIndex: Int
     
     var body: some View {
         VStack(spacing: .zero) {
             //TODO: Divider 공통 컴포넌트로 변경 예정
-            Divider()
             HStack(alignment:.center, spacing: .zero) {
-                Text("스터디")
+                Text(recentHistory)
                     .font(.callout)
                     .foregroundColor(.black)
                 Spacer()
                 Button {
-                    //TODO: 최근 검색어 삭제
+                    searchStates._searchHistorys.remove(at: recentHistoryIndex)
                 } label: {
                     Image(systemName: "xmark")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 17)
-                        .fontWeight(.light)
                         .foregroundColor(.gray)
                 }
 
@@ -71,6 +93,7 @@ struct RecentSearchHistoryCellView: View {
 
 struct RecentSearchListView_Previews: PreviewProvider {
     static var previews: some View {
-        RecentSearchHistoryListView()
+        RecentSearchHistoryListView(searchStates: SearchStateHolder())
     }
 }
+
