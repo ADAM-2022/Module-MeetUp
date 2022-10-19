@@ -15,7 +15,11 @@ struct SearchView: View {
             RecentSearchHistoryListView(searchStates: searchStates)
             Spacer()
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .ignoresSafeArea(.keyboard)
+        .onTapGesture {
+            hideKeyboard()
+        }
     }
 }
 

@@ -14,6 +14,7 @@ struct SearchBarView: View {
         HStack(spacing: .zero){
             Button {
                 searchStates.updateSearchContent()
+                hideKeyboard()
             } label: {
                 Image(systemName: "magnifyingglass")
                     .resizable()
