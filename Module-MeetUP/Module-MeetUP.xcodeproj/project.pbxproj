@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2A48679328D746BA0011FE44 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A48679228D746BA0011FE44 /* ViewExtension.swift */; };
+		2A71017D28F158AF001049B1 /* WriteButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A71017C28F158AF001049B1 /* WriteButtonView.swift */; };
+		2A71017F28F16552001049B1 /* PostsListSearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A71017E28F16552001049B1 /* PostsListSearchBarView.swift */; };
 		2A71017B28EAD8E1001049B1 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A71017A28EAD8E1001049B1 /* ArrayExtension.swift */; };
 		2ABA33D028D967FC00A16804 /* RecentSearchHistoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABA33CF28D967FC00A16804 /* RecentSearchHistoryListView.swift */; };
 		2ABDC53C28D96D8900A3D1E6 /* SearchBackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABDC53B28D96D8900A3D1E6 /* SearchBackButtonView.swift */; };
@@ -19,11 +21,9 @@
 		AB009F5128D6FCE400A43D63 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB009F5028D6FCE400A43D63 /* Preview Assets.xcassets */; };
 		AB009F6728D7929900A43D63 /* PostsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009F5F28D7929900A43D63 /* PostsListView.swift */; };
 		AB009F6828D7929900A43D63 /* SectionDividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009F6128D7929900A43D63 /* SectionDividerView.swift */; };
-		AB009F6928D7929900A43D63 /* PostCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009F6228D7929900A43D63 /* PostCellView.swift */; };
+		AB009F6928D7929900A43D63 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009F6228D7929900A43D63 /* PostCell.swift */; };
 		AB009F6A28D7929900A43D63 /* PostsListTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009F6328D7929900A43D63 /* PostsListTitleView.swift */; };
 		AB009F6B28D7929900A43D63 /* BackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009F6428D7929900A43D63 /* BackButtonView.swift */; };
-		AB009F6C28D7929900A43D63 /* FloatingButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009F6528D7929900A43D63 /* FloatingButtonView.swift */; };
-		AB009F6D28D7929900A43D63 /* SearchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009F6628D7929900A43D63 /* SearchButton.swift */; };
 		AB009FA228D8C5B500A43D63 /* MeetUpNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009FA028D8C5B500A43D63 /* MeetUpNetworkService.swift */; };
 		AB009FA328D8C5B500A43D63 /* MeetUpNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009FA128D8C5B500A43D63 /* MeetUpNetwork.swift */; };
 		AB009FA528D8C5CE00A43D63 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009FA428D8C5CE00A43D63 /* MainView.swift */; };
@@ -42,6 +42,8 @@
 
 /* Begin PBXFileReference section */
 		2A48679228D746BA0011FE44 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		2A71017C28F158AF001049B1 /* WriteButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteButtonView.swift; sourceTree = "<group>"; };
+		2A71017E28F16552001049B1 /* PostsListSearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListSearchBarView.swift; sourceTree = "<group>"; };
 		2A71017A28EAD8E1001049B1 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
 		2ABA33CF28D967FC00A16804 /* RecentSearchHistoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearchHistoryListView.swift; sourceTree = "<group>"; };
 		2ABDC53B28D96D8900A3D1E6 /* SearchBackButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBackButtonView.swift; sourceTree = "<group>"; };
@@ -53,11 +55,9 @@
 		AB009F5028D6FCE400A43D63 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AB009F5F28D7929900A43D63 /* PostsListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsListView.swift; sourceTree = "<group>"; };
 		AB009F6128D7929900A43D63 /* SectionDividerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionDividerView.swift; sourceTree = "<group>"; };
-		AB009F6228D7929900A43D63 /* PostCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCellView.swift; sourceTree = "<group>"; };
+		AB009F6228D7929900A43D63 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		AB009F6328D7929900A43D63 /* PostsListTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsListTitleView.swift; sourceTree = "<group>"; };
 		AB009F6428D7929900A43D63 /* BackButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackButtonView.swift; sourceTree = "<group>"; };
-		AB009F6528D7929900A43D63 /* FloatingButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingButtonView.swift; sourceTree = "<group>"; };
-		AB009F6628D7929900A43D63 /* SearchButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchButton.swift; sourceTree = "<group>"; };
 		AB009FA028D8C5B500A43D63 /* MeetUpNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetUpNetworkService.swift; sourceTree = "<group>"; };
 		AB009FA128D8C5B500A43D63 /* MeetUpNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetUpNetwork.swift; sourceTree = "<group>"; };
 		AB009FA428D8C5CE00A43D63 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -128,12 +128,12 @@
 			isa = PBXGroup;
 			children = (
 				AB009F6128D7929900A43D63 /* SectionDividerView.swift */,
-				AB009F6228D7929900A43D63 /* PostCellView.swift */,
+				AB009F6228D7929900A43D63 /* PostCell.swift */,
 				AB009F6328D7929900A43D63 /* PostsListTitleView.swift */,
 				AB009F6428D7929900A43D63 /* BackButtonView.swift */,
-				AB009F6528D7929900A43D63 /* FloatingButtonView.swift */,
-				AB009F6628D7929900A43D63 /* SearchButton.swift */,
 				2AC77E8528D873710038514F /* RefreshableScrollView.swift */,
+				2A71017C28F158AF001049B1 /* WriteButtonView.swift */,
+				2A71017E28F16552001049B1 /* PostsListSearchBarView.swift */,
 			);
 			path = PostsListViewComponents;
 			sourceTree = "<group>";
@@ -331,10 +331,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB009FB128D8C5E000A43D63 /* PostDetailTitleArea.swift in Sources */,
+				2A71017F28F16552001049B1 /* PostsListSearchBarView.swift in Sources */,
 				AB009FB728D8C64300A43D63 /* Post.swift in Sources */,
 				2ABDC53C28D96D8900A3D1E6 /* SearchBackButtonView.swift in Sources */,
 				AB009FA228D8C5B500A43D63 /* MeetUpNetworkService.swift in Sources */,
-				AB009F6928D7929900A43D63 /* PostCellView.swift in Sources */,
+				AB009F6928D7929900A43D63 /* PostCell.swift in Sources */,
 				AB009F6A28D7929900A43D63 /* PostsListTitleView.swift in Sources */,
 				ABD4874228D6F99500FFD3A1 /* Module_MeetUPApp.swift in Sources */,
 				2AC77E8D28D943FF0038514F /* SearchBarView.swift in Sources */,
@@ -344,6 +345,7 @@
 				AB009FA328D8C5B500A43D63 /* MeetUpNetwork.swift in Sources */,
 				AB009FAF28D8C5E000A43D63 /* PostDetailInfoArea.swift in Sources */,
 				2ABA33D028D967FC00A16804 /* RecentSearchHistoryListView.swift in Sources */,
+				2A71017D28F158AF001049B1 /* WriteButtonView.swift in Sources */,
 				2A71017B28EAD8E1001049B1 /* ArrayExtension.swift in Sources */,
 				AB009F6D28D7929900A43D63 /* SearchButton.swift in Sources */,
 				AB009FB228D8C5E000A43D63 /* PostDetailView.swift in Sources */,
@@ -495,6 +497,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -524,6 +527,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
