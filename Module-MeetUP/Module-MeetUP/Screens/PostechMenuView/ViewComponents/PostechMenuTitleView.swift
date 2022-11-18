@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct PostechMenuTitleView: View {
+    //TODO: 선택된 날짜 및 식당 인덱스 메인뷰에서의 바인딩 필요
     var selectedRestaurantIndex: Int = 0
     var selectedDate: String = "0월0일 일요일"
     
