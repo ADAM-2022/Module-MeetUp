@@ -15,6 +15,6 @@ struct MenuWeeklyCalendarView: View {
 
 struct MenuWeeklyCalendarView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuWeeklyCalendar()
+        MenuWeeklyCalendarView()
     }
 }
