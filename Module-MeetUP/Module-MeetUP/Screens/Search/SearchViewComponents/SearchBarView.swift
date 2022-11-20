@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SearchBarView: View {
     //TODO: 임시 텍스트필드 변수 변경 예정
-    @available(iOS 15, *) @FocusState private var focus: Bool
+    @FocusState private var focus: Bool
     @StateObject var searchStates: SearchStateHolder
     var body: some View {
         HStack(spacing: .zero){
