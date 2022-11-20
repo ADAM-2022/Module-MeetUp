@@ -21,7 +21,6 @@
 		2ACDB26228DA8BEB0016E117 /* SearchStateHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACDB26128DA8BEB0016E117 /* SearchStateHolder.swift */; };
 		AB009F5128D6FCE400A43D63 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB009F5028D6FCE400A43D63 /* Preview Assets.xcassets */; };
 		AB009F6728D7929900A43D63 /* PostsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009F5F28D7929900A43D63 /* PostsListView.swift */; };
-		AB009F6828D7929900A43D63 /* SectionDividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009F6128D7929900A43D63 /* SectionDividerView.swift */; };
 		AB009F6928D7929900A43D63 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009F6228D7929900A43D63 /* PostCell.swift */; };
 		AB009F6A28D7929900A43D63 /* PostsListTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009F6328D7929900A43D63 /* PostsListTitleView.swift */; };
 		AB009F6B28D7929900A43D63 /* BackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB009F6428D7929900A43D63 /* BackButtonView.swift */; };
@@ -56,7 +55,6 @@
 		2ACDB26128DA8BEB0016E117 /* SearchStateHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchStateHolder.swift; sourceTree = "<group>"; };
 		AB009F5028D6FCE400A43D63 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AB009F5F28D7929900A43D63 /* PostsListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsListView.swift; sourceTree = "<group>"; };
-		AB009F6128D7929900A43D63 /* SectionDividerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionDividerView.swift; sourceTree = "<group>"; };
 		AB009F6228D7929900A43D63 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		AB009F6328D7929900A43D63 /* PostsListTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsListTitleView.swift; sourceTree = "<group>"; };
 		AB009F6428D7929900A43D63 /* BackButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackButtonView.swift; sourceTree = "<group>"; };
@@ -130,7 +128,6 @@
 		AB009F6028D7929900A43D63 /* PostsListViewComponents */ = {
 			isa = PBXGroup;
 			children = (
-				AB009F6128D7929900A43D63 /* SectionDividerView.swift */,
 				AB009F6228D7929900A43D63 /* PostCell.swift */,
 				AB009F6328D7929900A43D63 /* PostsListTitleView.swift */,
 				AB009F6428D7929900A43D63 /* BackButtonView.swift */,
@@ -345,7 +342,6 @@
 				2AC77E8D28D943FF0038514F /* SearchBarView.swift in Sources */,
 				2ABDC53E28D96E9400A3D1E6 /* SearchView.swift in Sources */,
 				AB009FAE28D8C5E000A43D63 /* PostDetailBackButton.swift in Sources */,
-				AB009F6828D7929900A43D63 /* SectionDividerView.swift in Sources */,
 				AB009FA328D8C5B500A43D63 /* MeetUpNetwork.swift in Sources */,
 				AB009FAF28D8C5E000A43D63 /* PostDetailInfoArea.swift in Sources */,
 				2ABA33D028D967FC00A16804 /* RecentSearchHistoryListView.swift in Sources */,
