@@ -16,11 +16,13 @@ struct MenuWeeklyCalendarView: View {
         }
         return dateRange
     }
+    //TODO: 후에 PostechMenuStateHolder의 변수로 교체 예정
+    @State var selectedDate = Date()
     var body: some View {
                 HStack(alignment: .center, spacing: .zero) {
                     ForEach(getDateRange(), id: \.self) { date in
                         Button {
-                            //TODO: 선택날짜 전달
+                            selectedDate = date
                         } label: {
                             //TODO: DateFormatter 추가 후 전체 텍스트 변경 필요
                             VStack(spacing: 4) {
@@ -34,10 +36,10 @@ struct MenuWeeklyCalendarView: View {
                                     .foregroundColor(date.getDate() == Date().getDate() ? .blue : .black)
                             }
                             .padding(8)
-                            .background(Capsule().strokeBorder(date.getDate() == Date().getDate() ?  .blue : .clear))
+                            .background(Capsule().strokeBorder(date.getDate() == selectedDate.getDate() ?  .blue : .clear))
                         }
                     }
-                    .frame(width: (UIScreen.main.bounds.width - 40) / 7)
+                    .frame(width: (UIScreen.main.bounds.width - 46) / 7)
         }
     }
 }
