@@ -10,7 +10,7 @@ import SwiftUI
 struct PostechMenuTitleView: View {
     //TODO: 선택된 날짜 및 식당 인덱스 메인뷰에서의 바인딩 필요
     var selectedRestaurantIndex: Int = 0
-    var selectedDate: String = "0월0일 일요일"
+    @Binding var selectedDate: Date
     
     func setRestaurantTitle() -> String {
         switch selectedRestaurantIndex {
@@ -26,7 +26,7 @@ struct PostechMenuTitleView: View {
     }
     
     var body: some View {
-        Text("\(setRestaurantTitle()) \(selectedDate)")
+        Text("\(setRestaurantTitle()) \(selectedDate.getMonthAndDayKor()) \(selectedDate.getDayOfWeek())")
             .font(.callout)
             .foregroundColor(.black)
             .padding(EdgeInsets(top: 11, leading: 68, bottom: 10, trailing: 69))
@@ -38,6 +38,6 @@ struct PostechMenuTitleView: View {
 
 struct PostechMenuTitleView_Previews: PreviewProvider {
     static var previews: some View {
-        PostechMenuTitleView()
+        PostechMenuTitleView(selectedDate: .constant(Date()))
     }
 }
