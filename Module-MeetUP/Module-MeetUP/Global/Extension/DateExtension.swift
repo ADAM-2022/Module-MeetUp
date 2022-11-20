@@ -42,4 +42,11 @@ extension Date {
         dateFormatter.locale = Locale(identifier: "ko")
         return dateFormatter.string(from: self).capitalized
     }
+    
+    func getDay() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd"
+        dateFormatter.locale = Locale(identifier: "ko")
+        return dateFormatter.string(from: self).capitalized
+    }
 }
