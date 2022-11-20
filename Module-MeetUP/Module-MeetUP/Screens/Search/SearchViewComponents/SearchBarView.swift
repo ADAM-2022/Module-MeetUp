@@ -23,6 +23,7 @@ struct SearchBarView: View {
                     .frame(height: 18)
                     .foregroundColor(.gray)
             }
+            .disabled(searchStates.searchContent.isEmpty)
             .padding(.trailing, 9)
             TextField("찾고싶은 제목, 내용을 입력해주세요", text: $searchStates.searchContent)
                 .font(.callout)
@@ -42,6 +43,7 @@ struct SearchBarView: View {
                     .frame(height: 18)
                     .foregroundColor(.gray)
             }
+            .disabled(searchStates.searchContent.isEmpty)
 
         }
         .padding(EdgeInsets(top: 12, leading: 22, bottom: 12, trailing: 12))
