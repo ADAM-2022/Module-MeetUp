@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct PostechMenuView: View {
+    @State var selectedRestaurantNum = 0
+    @State var selectedDate = Date()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(spacing: .zero) {
+            PostechMenuTitleView(selectedDate: $selectedDate)
+                .padding(.bottom, 18)
+            MenuWeeklyCalendarView(selectedDate: $selectedDate)
+                .padding(.bottom, 18)
+            Spacer()
+            RestaurantSegmentedPickerView()
+            
+        }
     }
 }
 

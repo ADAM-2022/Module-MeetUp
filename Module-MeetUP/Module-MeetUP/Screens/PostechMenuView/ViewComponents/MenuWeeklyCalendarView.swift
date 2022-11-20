@@ -17,7 +17,7 @@ struct MenuWeeklyCalendarView: View {
         return dateRange
     }
     //TODO: 후에 PostechMenuStateHolder의 변수로 교체 예정
-    @State var selectedDate = Date()
+    @Binding var selectedDate: Date
     var body: some View {
                 HStack(alignment: .center, spacing: .zero) {
                     ForEach(getDateRange(), id: \.self) { date in
@@ -46,6 +46,6 @@ struct MenuWeeklyCalendarView: View {
 
 struct MenuWeeklyCalendarView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuWeeklyCalendarView()
+        MenuWeeklyCalendarView(selectedDate: .constant(Date()))
     }
 }
