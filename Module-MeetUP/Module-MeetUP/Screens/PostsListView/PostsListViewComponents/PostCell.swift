@@ -50,7 +50,7 @@ struct PostCommentView: View {
                 .font(.caption)
             Text("\(commentCount)")
                 .fontWeight(.semibold)
-                .foregroundColor(.black)
+                .foregroundColor(.blue)
                 .font(.callout)
         }
         .padding(EdgeInsets(top: 8, leading: 13, bottom: 10, trailing: 13))
