@@ -9,11 +9,11 @@ import SwiftUI
 
 struct PostechMenuTitleView: View {
     //TODO: 선택된 날짜 및 식당 인덱스 메인뷰에서의 바인딩 필요
-    var selectedRestaurantIndex: Int = 0
+    @Binding var selectedRestaurantNum: Int
     @Binding var selectedDate: Date
     
     func setRestaurantTitle() -> String {
-        switch selectedRestaurantIndex {
+        switch selectedRestaurantNum {
         case 0:
             return "지곡회관"
         case 1:
@@ -38,6 +38,6 @@ struct PostechMenuTitleView: View {
 
 struct PostechMenuTitleView_Previews: PreviewProvider {
     static var previews: some View {
-        PostechMenuTitleView(selectedDate: .constant(Date()))
+        PostechMenuTitleView(selectedRestaurantNum: .constant(0), selectedDate: .constant(Date()))
     }
 }

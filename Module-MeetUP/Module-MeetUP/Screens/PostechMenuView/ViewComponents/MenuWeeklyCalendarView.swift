@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MenuWeeklyCalendarView: View {
-    //TODO: 후에 PostechMenuStateHolder.swift로 옮길 로직
+    //TODO: 후에 PostechMenuStateHolder로 옮길 로직
     func getDateRange() -> [Date] {
         var dateRange: [Date] = []
         for addDate in 0..<7 {
@@ -24,7 +24,6 @@ struct MenuWeeklyCalendarView: View {
                         Button {
                             selectedDate = date
                         } label: {
-                            //TODO: DateFormatter 추가 후 전체 텍스트 변경 필요
                             VStack(spacing: 4) {
                                 Text("\(date.getDay())")
                                     .font(.system(size: 12))

@@ -13,12 +13,13 @@ struct PostechMenuView: View {
     
     var body: some View {
         VStack(spacing: .zero) {
-            PostechMenuTitleView(selectedDate: $selectedDate)
+            PostechMenuTitleView(selectedRestaurantNum: $selectedRestaurantNum, selectedDate: $selectedDate)
                 .padding(.bottom, 18)
             MenuWeeklyCalendarView(selectedDate: $selectedDate)
                 .padding(.bottom, 18)
+            //TODO: 식단뷰 들어갈 공간
             Spacer()
-            RestaurantSegmentedPickerView()
+            RestaurantSegmentedPickerView(selectedRestaurantNum: $selectedRestaurantNum)
             
         }
     }
