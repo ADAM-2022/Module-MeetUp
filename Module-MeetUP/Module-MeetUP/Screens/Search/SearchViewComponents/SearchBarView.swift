@@ -28,6 +28,11 @@ struct SearchBarView: View {
             TextField("찾고싶은 제목, 내용을 입력해주세요", text: $searchStates.searchContent)
                 .font(.callout)
                 .focused($focus)
+                .onSubmit {
+                    if !searchStates.searchContent.isEmpty {
+                        searchStates.updateSearchContent()
+                    }
+                }
                 .onAppear {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                         self.focus = true
