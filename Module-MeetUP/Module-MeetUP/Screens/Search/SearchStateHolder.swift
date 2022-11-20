@@ -21,7 +21,7 @@ final class SearchStateHolder: ObservableObject {
     }
     
     func updateSearchContent() {
-        _searchHistorys.append(searchContent)
+        _searchHistorys.insert(searchContent, at: 0)
         searchHistorys = _searchHistorys
         searchContent = ""
     }
