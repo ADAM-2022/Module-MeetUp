@@ -24,14 +24,14 @@ struct MenuWeeklyCalendarView: View {
                         } label: {
                             //TODO: DateFormatter 추가 후 전체 텍스트 변경 필요
                             VStack(spacing: 4) {
+                                Text("\(date.getDay())")
+                                    .font(.system(size: 12))
+                                    .fontWeight(date.getDate() == Date().getDate() ? .bold : .semibold)
+                                    .foregroundColor(date.getDate() == Date().getDate() ? .blue : .gray)
                                 Text("\(date.getDayOfWeekShort())")
                                     .font(.system(size: 16))
                                     .fontWeight(.semibold)
                                     .foregroundColor(date.getDate() == Date().getDate() ? .blue : .black)
-                                Text("\(date.getDay())")
-                                    .font(.system(size: 12))
-                                    .fontWeight(.bold)
-                                    .foregroundColor(date.getDate() == Date().getDate() ? .blue : .gray)
                             }
                             .padding(8)
                             .background(Capsule().strokeBorder(date.getDate() == Date().getDate() ?  .blue : .clear))
