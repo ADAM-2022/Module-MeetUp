@@ -16,52 +16,15 @@ struct PostsListView: View {
                 refreshDone()
             }) {
                 VStack(spacing: .zero) {
-                    PopularPostsSectionView()
-                    SectionDividerView()
-                    TotalPostsSectionView()
+                    ForEach(0 ..< 10, id: \.self) { _ in
+                        PostCell()
+                        Divider()
+                    }
                     Spacer()
                 }
             }
         }
         .ignoresSafeArea()
-    }
-}
-
-//TODO: ForEach문 전부 변경 필요
-struct PopularPostsSectionView: View {
-    var body: some View {
-        VStack(alignment:.leading, spacing: .zero) {
-            Text("인기 게시글")
-                .fontWeight(.bold)
-                .foregroundColor(.black)
-                .font(.system(size: 18))
-                .padding(EdgeInsets(top: 16, leading: 20, bottom: 9, trailing: 20))
-            ForEach(0 ..< 2, id: \.self) { postNum in
-                PostCell()
-                if postNum < 1 {
-                    //TODO: 공통 Divider 컴포넌트로 교체 예정
-                    Divider()
-                }
-            }
-        }
-    }
-}
-
-struct TotalPostsSectionView: View {
-    var body: some View {
-        VStack(alignment: .leading, spacing: .zero) {
-            Text("전체 게시글")
-                .fontWeight(.bold)
-                .foregroundColor(.black)
-                .font(.system(size: 18))
-                .padding(EdgeInsets(top: .zero, leading: 20, bottom: 9, trailing: 20))
-            
-            ForEach(0 ..< 10, id: \.self) { _ in
-                PostCell()
-                Divider()
-            }
-        }
-        
     }
 }
 
