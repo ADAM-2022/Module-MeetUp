@@ -16,6 +16,7 @@
 		2A49A1232927E0B300897379 /* WisdomMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A49A1222927E0B300897379 /* WisdomMenuView.swift */; };
 		2A49A1252927E0CB00897379 /* BluehillMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A49A1242927E0CB00897379 /* BluehillMenuView.swift */; };
 		2A49A1272927EBE200897379 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A49A1262927EBE200897379 /* DateExtension.swift */; };
+		2A49A129292D2AA500897379 /* MenuTimeSlotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A49A128292D2AA500897379 /* MenuTimeSlotView.swift */; };
 		2A71017B28EAD8E1001049B1 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A71017A28EAD8E1001049B1 /* ArrayExtension.swift */; };
 		2A71017D28F158AF001049B1 /* WriteButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A71017C28F158AF001049B1 /* WriteButtonView.swift */; };
 		2A71017F28F16552001049B1 /* PostsListSearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A71017E28F16552001049B1 /* PostsListSearchBarView.swift */; };
@@ -57,6 +58,7 @@
 		2A49A1222927E0B300897379 /* WisdomMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WisdomMenuView.swift; sourceTree = "<group>"; };
 		2A49A1242927E0CB00897379 /* BluehillMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluehillMenuView.swift; sourceTree = "<group>"; };
 		2A49A1262927EBE200897379 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		2A49A128292D2AA500897379 /* MenuTimeSlotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTimeSlotView.swift; sourceTree = "<group>"; };
 		2A71017A28EAD8E1001049B1 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
 		2A71017C28F158AF001049B1 /* WriteButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteButtonView.swift; sourceTree = "<group>"; };
 		2A71017E28F16552001049B1 /* PostsListSearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListSearchBarView.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				2A49A1202927E0A900897379 /* JigokMenuView.swift */,
 				2A49A1222927E0B300897379 /* WisdomMenuView.swift */,
 				2A49A1242927E0CB00897379 /* BluehillMenuView.swift */,
+				2A49A128292D2AA500897379 /* MenuTimeSlotView.swift */,
 			);
 			path = RestaurantsViewComponents;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 				AB009FB728D8C64300A43D63 /* Post.swift in Sources */,
 				2ABDC53C28D96D8900A3D1E6 /* SearchBackButtonView.swift in Sources */,
 				AB009FA228D8C5B500A43D63 /* MeetUpNetworkService.swift in Sources */,
+				2A49A129292D2AA500897379 /* MenuTimeSlotView.swift in Sources */,
 				AB009F6928D7929900A43D63 /* PostCell.swift in Sources */,
 				2A49A11E2927E05300897379 /* PostechMenuTitleView.swift in Sources */,
 				2A49A11A2927E02000897379 /* RestaurantSegmentedPickerView.swift in Sources */,
