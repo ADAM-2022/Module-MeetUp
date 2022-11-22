@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SearchBarView: View {
     //TODO: 임시 텍스트필드 변수 변경 예정
-    @available(iOS 15, *) @FocusState private var focus: Bool
+    @FocusState private var focus: Bool
     @StateObject var searchStates: SearchStateHolder
     var body: some View {
         HStack(spacing: .zero){
@@ -23,10 +23,16 @@ struct SearchBarView: View {
                     .frame(height: 18)
                     .foregroundColor(.gray)
             }
+            .disabled(searchStates.searchContent.isEmpty)
             .padding(.trailing, 9)
             TextField("찾고싶은 제목, 내용을 입력해주세요", text: $searchStates.searchContent)
                 .font(.callout)
                 .focused($focus)
+                .onSubmit {
+                    if !searchStates.searchContent.isEmpty {
+                        searchStates.updateSearchContent()
+                    }
+                }
                 .onAppear {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                         self.focus = true
@@ -42,6 +48,7 @@ struct SearchBarView: View {
                     .frame(height: 18)
                     .foregroundColor(.gray)
             }
+            .disabled(searchStates.searchContent.isEmpty)
 
         }
         .padding(EdgeInsets(top: 12, leading: 22, bottom: 12, trailing: 12))
