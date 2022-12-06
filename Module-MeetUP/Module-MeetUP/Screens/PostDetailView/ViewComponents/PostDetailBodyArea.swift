@@ -8,17 +8,19 @@
 import SwiftUI
 
 struct PostDetailBodyArea: View {
+    @ObservedObject var stateHolder: PostDetailStateHolder
+    
     var body: some View {
         VStack(spacing: .zero) {
             Rectangle()
                 .frame(height: 1)
                 .opacity(0.1)
                 .padding(.bottom, 20)
-            PostDetailBodyText()
+            PostDetailBodyText(bodyString: stateHolder.postDetail?.body)
                 .font(Font.custom("Apple SD Gothic Neo", size: 16))
                 .lineSpacing(5)
                 .padding(.bottom, 20)
-            PostDetailImages()
+            PostDetailImages(imageStrings: stateHolder.postDetail?.images)
                 .padding(EdgeInsets(top: 0, leading: -20, bottom: 20, trailing: -20))
             Rectangle()
                 .frame(height: 1)
@@ -30,31 +32,36 @@ struct PostDetailBodyArea: View {
 }
 
 struct PostDetailBodyText: View {
+    let bodyString: String?
     var body: some View {
-        Text("포딩 차 타고 갈거라 같이 가실 2-3분 모집합니다~\n생각 있으시면 댓글 남겨주세요!\n아마 저녁 8시에 갈 것 같아요!")
+        Text(bodyString ?? "")
             .frame(maxWidth: .infinity, alignment: .leading)
     }
 }
 
 struct PostDetailImages: View {
+    let imageStrings: [String]?
+    
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 5) {
-                Image("example")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .foregroundColor(.gray)
-                    .frame(width: 300)
-                Image("example")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .foregroundColor(.gray)
-                    .frame(width: 300)
-                Image("example")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .foregroundColor(.gray)
-                    .frame(width: 300)
+                
+                
+//                Image("example")
+//                    .resizable()
+//                    .aspectRatio(contentMode: .fit)
+//                    .foregroundColor(.gray)
+//                    .frame(width: 300)
+//                Image("example")
+//                    .resizable()
+//                    .aspectRatio(contentMode: .fit)
+//                    .foregroundColor(.gray)
+//                    .frame(width: 300)
+//                Image("example")
+//                    .resizable()
+//                    .aspectRatio(contentMode: .fit)
+//                    .foregroundColor(.gray)
+//                    .frame(width: 300)
             }
             .padding(.leading, 20)
         }
@@ -63,6 +70,6 @@ struct PostDetailImages: View {
 
 struct PostDetailBodyArea_Previews: PreviewProvider {
     static var previews: some View {
-        PostDetailBodyArea()
+        PostDetailBodyArea(stateHolder: PostDetailStateHolder(postId: 1))
     }
 }

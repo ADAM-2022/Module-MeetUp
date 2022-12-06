@@ -24,4 +24,5 @@ enum MeetUpNetworkError: Error {
 
 protocol MeetUpNetwork {
     func fetchPost(with postId: Int) -> AnyPublisher<Post, MeetUpNetworkError>
+    func fetchPostImage(with imageId: String) -> AnyPublisher<[Data], MeetUpNetworkError>
 }

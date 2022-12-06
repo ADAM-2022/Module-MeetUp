@@ -10,14 +10,16 @@ import Combine
 
 struct PostDetailModel {
     let network: MeetUpNetwork
-    let postId: Int
     
-    init(postId: Int) {
-        self.postId = postId
+    init() {
         self.network = MeetUpNetworkService()
     }
     
     func fetchPost(with postId: Int) -> AnyPublisher<Post, MeetUpNetworkError> {
         return network.fetchPost(with: postId)
+    }
+    
+    func fetchPostImage(with imageString: String) -> AnyPublisher<[Data], MeetUpNetworkError> {
+        return network.fetchPostImage(with: imageString)
     }
 }

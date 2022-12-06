@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct PostDetailTitleArea: View {
+    let titleString: String?
+    
     var body: some View {
         HStack(spacing: .zero) {
             HStack(spacing: .zero) {
-                PostDetailTitle()
+                PostDetailTitle(titleString: titleString)
                     .padding(.trailing, 10)
                 PostDetailOptionButton()
             }
@@ -20,8 +22,10 @@ struct PostDetailTitleArea: View {
 }
 
 struct PostDetailTitle: View {
+    let titleString: String?
+    
     var body: some View {
-        Text("이번주 수요일 롯데마트 가실분? 아님 다음주?")
+        Text("\(titleString ?? "")")
             .font(Font.custom("Apple SD Gothic Neo", size: 24).bold())
             .frame(maxWidth: .infinity, alignment: .leading)
 //            .lineLimit(1)
@@ -46,6 +50,6 @@ struct PostDetailOptionButton: View {
 
 struct PostDetailTitleArea_Previews: PreviewProvider {
     static var previews: some View {
-        PostDetailTitleArea()
+        PostDetailTitleArea(titleString: "이번 주 수요일 롯데마트 가실 분? 아님 다음주?")
     }
 }

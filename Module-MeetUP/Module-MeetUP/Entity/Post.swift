@@ -10,10 +10,15 @@ import Foundation
 // MARK: - Post
 struct Post: Codable {
     let id: Int
-    let writerName, createdDate, lastModifiedDate, title: String
-    let body: String
-    let viewCount, commentCount: Int
-    let images: [String]
+        let board, writerName, createdDate: String
+        let modified: Bool
+        let title, body: String
+        let viewCount, commentCount: Int
+        let images: [String]
 }
 
 typealias Posts = [Post]
+
+struct MyError: Codable {
+    let id, status, code, message: String
+}

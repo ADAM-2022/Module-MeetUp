@@ -12,6 +12,7 @@ class MeetUpNetworkService: MeetUpNetwork {
     
     private let session: URLSession
     
+    
     init(session: URLSession = .shared) {
         self.session = session
     }
@@ -34,16 +35,43 @@ class MeetUpNetworkService: MeetUpNetwork {
             let error = MeetUpNetworkError.error("invalid URL")
             return Fail(error: error).eraseToAnyPublisher()
         }
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        request.addValue("eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJlODFjMDM4MyIsImF1dGgiOiJST0xFX1VTRVIifQ.LZ-FrqZmugxdgtjRNRSIu3D9S8LDQMmWPcwb_xxduBYFsAZn0B_sIJ0GaDZ8Zx78WCD1aJqWucl3lyqjngfC7g", forHTTPHeaderField: "Authorization")
         
-        return session.dataTaskPublisher(for: URLRequest(url: url))
+        return session.dataTaskPublisher(for: request)
             .mapError { error in
-                MeetUpNetworkError.error("API Error while fetch post-\(postId): \(error)")
+                print(error.code)
+                return MeetUpNetworkError.error("API Error while fetch post-\(postId): \(error)")
             }
             .flatMap(maxPublishers: .max(1)) { data in
                 return Just(data.data)
                     .decode(type: Post.self, decoder: JSONDecoder())
-                    .mapError { _ in
-                        .error("JSON parsing Error")
+                    .mapError { error in
+                        return .error("JSON parsing Error")
+                    }
+            }
+            .eraseToAnyPublisher()
+    }
+    
+    func fetchPostImage(with imageId: String) -> AnyPublisher<[Data], MeetUpNetworkError> {
+        guard let url = makeFetchPostImageComponents(imageId: imageId).url
+        else {
+            let error = MeetUpNetworkError.error("invalid URL")
+            return Fail(error: error).eraseToAnyPublisher()
+        }
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        return session.dataTaskPublisher(for: request)
+            .mapError { error in
+                print(error.code)
+                return MeetUpNetworkError.error("API Error while fetch post image-\(imageId): \(error)")
+            }
+            .flatMap(maxPublishers: .max(1)) { data in
+                return Just(data.data)
+                    .decode(type: [Data].self, decoder: JSONDecoder())
+                    .mapError { error in
+                        return .error("JSON parsing Error")
                     }
             }
             .eraseToAnyPublisher()
@@ -55,7 +83,8 @@ private extension MeetUpNetworkService {
         static let scheme = "http"
         static let host = "poding.site"
         static let port = 8080
-        static let postsPath = "/posts"
+        static let getPostPath = "/posts"
+        static let getPostImage = "/image"
         // MARK: 이곳에 각자의 Path를 적으면 됩니다.
     }
     
@@ -65,7 +94,17 @@ private extension MeetUpNetworkService {
         components.scheme = MeetUpAPI.scheme
         components.host = MeetUpAPI.host
         components.port = MeetUpAPI.port
-        components.path = MeetUpAPI.postsPath + "/\(postId)"
+        components.path = MeetUpAPI.getPostPath + "/\(postId)"
         return components
     }
+    
+    func makeFetchPostImageComponents(imageId: String) -> URLComponents {
+        var components = URLComponents()
+        components.scheme = MeetUpAPI.scheme
+        components.host = MeetUpAPI.host
+        components.port = MeetUpAPI.port
+        components.path = MeetUpAPI.getPostImage + "/\(imageId)"
+        return components
+    }
+    
 }
