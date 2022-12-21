@@ -10,13 +10,23 @@ import SwiftUI
 struct JigokMenuView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: .zero) {
-            MenuTimeSlotView()
-            //TODO: 식단뷰
-            .padding(.bottom ,18)
+            ForEach(0...2, id:\.self) {i in
+                VStack(alignment: .leading) {
+                    MenuTimeSlotView(timeSlotIndex: i)
+                        .padding(.bottom ,18)
+                    //TODO: 추후 API 연결 예정
+                    Text("식단 준비중 입니다")
+                        .font(.callout)
+                        .foregroundColor(.black)
+                }
+                .padding(.all, 20)
+                .overlay(menuCard())
+                .padding(.horizontal, 16)
+            }
+            .padding(.bottom, 12)
+
         }
-        .padding(.all, 20)
-        .overlay(menuCard())
-        .padding(.horizontal, 16)
+
     }
 }
 
