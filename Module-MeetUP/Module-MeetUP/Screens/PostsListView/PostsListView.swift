@@ -10,7 +10,9 @@ import SwiftUI
 struct PostsListView: View {
     var body: some View {
         ZStack {
-            Color.gray.frame(width: .infinity, height: .infinity)
+            Rectangle()
+                .fill(.gray)
+                .frame(width: .infinity, height: .infinity)
             VStack(alignment: .leading, spacing: .zero) {
                 PostsListTitleView()
                     .background(.white)
