@@ -9,22 +9,28 @@ import SwiftUI
 
 struct PostsListView: View {
     var body: some View {
-        VStack(alignment: .leading, spacing: .zero) {
-            PostsListTitleView()
-            RefreshableScrollView(onRefresh: { refreshDone in
-                //TODO: 새로고침될 항목 들어갈 부분
-                refreshDone()
-            }) {
-                VStack(spacing: .zero) {
-                    ForEach(0 ..< 10, id: \.self) { _ in
-                        PostCell()
-                        Divider()
+        ZStack {
+            Color.gray.frame(width: .infinity, height: .infinity)
+            VStack(alignment: .leading, spacing: .zero) {
+                PostsListTitleView()
+                    .background(.white)
+                RefreshableScrollView(onRefresh: { refreshDone in
+                    //TODO: 새로고침될 항목 들어갈 부분
+                    refreshDone()
+                }) {
+                    VStack(spacing: .zero) {
+                        ForEach(0 ..< 10, id: \.self) { _ in
+                            PostCell()
+                            Divider()
+                        }
+                        Spacer()
                     }
-                    Spacer()
+                    .background(.white)
                 }
             }
+            .ignoresSafeArea()
+            //.background(.white)
         }
-        .ignoresSafeArea()
     }
 }
 
