@@ -10,7 +10,7 @@ import SwiftUI
 struct JigokMenuView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: .zero) {
-            ForEach(0...2, id:\.self) {i in
+            ForEach(0 ... 2, id:\.self) {i in
                 VStack(alignment: .leading) {
                     MenuTimeSlotView(timeSlotIndex: i)
                         .padding(.bottom ,18)
