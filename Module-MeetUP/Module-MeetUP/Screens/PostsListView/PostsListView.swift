@@ -29,7 +29,6 @@ struct PostsListView: View {
                 }
             }
             .ignoresSafeArea()
-            //.background(.white)
         }
     }
 }
