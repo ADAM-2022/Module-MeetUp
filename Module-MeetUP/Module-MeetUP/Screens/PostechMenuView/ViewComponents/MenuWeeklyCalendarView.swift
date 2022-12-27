@@ -11,7 +11,7 @@ struct MenuWeeklyCalendarView: View {
     //TODO: 후에 PostechMenuStateHolder로 옮길 로직
     func getDateRange() -> [Date] {
         var dateRange: [Date] = []
-        for addDate in 0..<7 {
+        for addDate in 0 ..< 7 {
             dateRange.append(Calendar.current.date(byAdding: .day, value: addDate, to: Date()) ?? Date())
         }
         return dateRange
@@ -38,7 +38,7 @@ struct MenuWeeklyCalendarView: View {
                             .background(Capsule().strokeBorder(date.getDate() == selectedDate.getDate() ?  .blue : .clear))
                         }
                     }
-                    .frame(width: (UIScreen.main.bounds.width - 46) / 7)
+                    .frame(maxWidth: (.infinity - 46) / 7)
         }
     }
 }
