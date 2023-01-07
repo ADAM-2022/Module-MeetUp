@@ -9,17 +9,10 @@ import SwiftUI
 
 struct PostsListView: View {
     var body: some View {
-        ZStack {
-            Rectangle()
-                .fill(.gray)
-                .frame(width: .infinity, height: .infinity)
             VStack(alignment: .leading, spacing: .zero) {
                 PostsListTitleView()
                     .background(.white)
-                RefreshableScrollView(onRefresh: { refreshDone in
-                    //TODO: 새로고침될 항목 들어갈 부분
-                    refreshDone()
-                }) {
+                List {
                     VStack(spacing: .zero) {
                         ForEach(0 ..< 10, id: \.self) { _ in
                             PostCell()
@@ -29,11 +22,17 @@ struct PostsListView: View {
                     }
                     .background(.white)
                 }
+                .listStyle(PlainListStyle())
+                .refreshable {
+                    //TODO: 새로고침 시 들어갈 로직
+                }
+                .onAppear {
+                    UIRefreshControl.appearance().backgroundColor = .gray
+                }
             }
             .ignoresSafeArea()
         }
     }
-}
 
 struct PostsListView_Previews: PreviewProvider {
     static var previews: some View {
