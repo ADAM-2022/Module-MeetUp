@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A3545E1296E87400055C81C /* WritePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3545E0296E87400055C81C /* WritePostView.swift */; };
+		2A3545E3296E875D0055C81C /* WritePostTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3545E2296E875D0055C81C /* WritePostTitleView.swift */; };
 		2A48679328D746BA0011FE44 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A48679228D746BA0011FE44 /* ViewExtension.swift */; };
 		2A49A1172927DFBA00897379 /* PostechMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A49A1162927DFBA00897379 /* PostechMenuView.swift */; };
 		2A49A11A2927E02000897379 /* RestaurantSegmentedPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A49A1192927E02000897379 /* RestaurantSegmentedPickerView.swift */; };
@@ -49,6 +51,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A3545E0296E87400055C81C /* WritePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritePostView.swift; sourceTree = "<group>"; };
+		2A3545E2296E875D0055C81C /* WritePostTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritePostTitleView.swift; sourceTree = "<group>"; };
 		2A48679228D746BA0011FE44 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		2A49A1162927DFBA00897379 /* PostechMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostechMenuView.swift; sourceTree = "<group>"; };
 		2A49A1192927E02000897379 /* RestaurantSegmentedPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantSegmentedPickerView.swift; sourceTree = "<group>"; };
@@ -102,6 +106,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A3545DE296E87140055C81C /* WritePostView */ = {
+			isa = PBXGroup;
+			children = (
+				2A3545DF296E87270055C81C /* ViewComponents */,
+				2A3545E0296E87400055C81C /* WritePostView.swift */,
+			);
+			path = WritePostView;
+			sourceTree = "<group>";
+		};
+		2A3545DF296E87270055C81C /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				2A3545E2296E875D0055C81C /* WritePostTitleView.swift */,
+			);
+			path = ViewComponents;
+			sourceTree = "<group>";
+		};
 		2A48679128D746A30011FE44 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,6 +278,7 @@
 		ABD4875528D6FA4400FFD3A1 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				2A3545DE296E87140055C81C /* WritePostView */,
 				2A49A1152927DFA400897379 /* PostechMenuView */,
 				AB009FA428D8C5CE00A43D63 /* MainView.swift */,
 				ABD4874F28D6F9B400FFD3A1 /* PostsListView */,
@@ -380,10 +402,12 @@
 			files = (
 				AB009FB128D8C5E000A43D63 /* PostDetailTitleArea.swift in Sources */,
 				2A49A1272927EBE200897379 /* DateExtension.swift in Sources */,
+				2A3545E3296E875D0055C81C /* WritePostTitleView.swift in Sources */,
 				2A71017F28F16552001049B1 /* PostsListSearchBarView.swift in Sources */,
 				AB009FB728D8C64300A43D63 /* Post.swift in Sources */,
 				2ABDC53C28D96D8900A3D1E6 /* SearchBackButtonView.swift in Sources */,
 				AB009FA228D8C5B500A43D63 /* MeetUpNetworkService.swift in Sources */,
+				2A3545E1296E87400055C81C /* WritePostView.swift in Sources */,
 				2A49A129292D2AA500897379 /* MenuTimeSlotView.swift in Sources */,
 				AB009F6928D7929900A43D63 /* PostCell.swift in Sources */,
 				2A49A11E2927E05300897379 /* PostechMenuTitleView.swift in Sources */,
